@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>张宸 blog</title>
+  <icon>https://www.gravatar.com/avatar/1628e04afb593d338e56493b90da0bb6</icon>
+  <subtitle>sometimes code， sometimes design</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://ss102.ren/"/>
+  <updated>2020-10-23T09:22:40.819Z</updated>
+  <id>https://ss102.ren/</id>
+  
+  <author>
+    <name>张宸</name>
+    <email>ver2@foxmail.com</email>
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>EasyRecovery-文件数据恢复软件</title>
+    <link href="https://ss102.ren/uncategorized/EasyRecovery-%E6%96%87%E4%BB%B6%E6%95%B0%E6%8D%AE%E6%81%A2%E5%A4%8D%E8%BD%AF%E4%BB%B6/"/>
+    <id>https://ss102.ren/uncategorized/EasyRecovery-%E6%96%87%E4%BB%B6%E6%95%B0%E6%8D%AE%E6%81%A2%E5%A4%8D%E8%BD%AF%E4%BB%B6/</id>
+    <published>2020-10-23T08:41:46.000Z</published>
+    <updated>2020-10-23T09:22:40.819Z</updated>
+    
+    <content type="html"><![CDATA[<p>EasyRecovery是一款操作简单、功能强大数据恢复软件，通过easyrecovery可以从硬盘、光盘、U盘、数码相机、手机等各种设备中恢复被删除或丢失的文件、图片、音频、视频等数据文件。</p><p>大陆版本由苏州思杰马克丁代理。</p><a id="more"></a><p>免授权版本: <a href="https://pan.baidu.com/s/18Qc10Qr71X05CvtCSwo8dg" target="_blank" rel="external nofollow">百度网盘下载</a> 提取码: 7myk </p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;EasyRecovery是一款操作简单、功能强大数据恢复软件，通过easyrecovery可以从硬盘、光盘、U盘、数码相机、手机等各种设备中恢复被删除或丢失的文件、图片、音频、视频等数据文件。&lt;/p&gt;
+&lt;p&gt;大陆版本由苏州思杰马克丁代理。&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="EasyRecovery" scheme="https://ss102.ren/tags/EasyRecovery/"/>
+    
+      <category term="数据恢复" scheme="https://ss102.ren/tags/%E6%95%B0%E6%8D%AE%E6%81%A2%E5%A4%8D/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>河南省13-19年对口升学各专业考试试卷下载</title>
+    <link href="https://ss102.ren/uncategorized/%E6%B2%B3%E5%8D%97%E7%9C%8113-19%E5%B9%B4%E5%AF%B9%E5%8F%A3%E5%8D%87%E5%AD%A6%E5%90%84%E4%B8%93%E4%B8%9A%E8%80%83%E8%AF%95%E8%AF%95%E5%8D%B7%E4%B8%8B%E8%BD%BD/"/>
+    <id>https://ss102.ren/uncategorized/%E6%B2%B3%E5%8D%97%E7%9C%8113-19%E5%B9%B4%E5%AF%B9%E5%8F%A3%E5%8D%87%E5%AD%A6%E5%90%84%E4%B8%93%E4%B8%9A%E8%80%83%E8%AF%95%E8%AF%95%E5%8D%B7%E4%B8%8B%E8%BD%BD/</id>
+    <published>2020-06-05T17:30:29.000Z</published>
+    <updated>2020-10-23T09:23:27.273Z</updated>
+    
+    <content type="html"><![CDATA[<p>河南省2013-2019年中职生对口升学各专业考试试卷下载</p><a id="more"></a><p>目录</p><p><img src="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/20200606013323.png" alt></p><p>2013-2018年历年真题试卷来自 <a href="http://www.vae.ha.cn/" target="_blank" rel="external nofollow">河南省职成教网</a></p><p>因河南省职成教网目前为止还未公布2019年试卷下载</p><p>所以目录里的2019年语文数学英语试卷来自 互联网。</p><p>附件- <a href="https://lanzous.com/izWe4ddoxkd" target="_blank" rel="external nofollow">河南省2013-2019对口升学历年真题.zip</a></p><p>备用下载：</p><p>链接: <a href="https://pan.baidu.com/s/14LJCa2JRmuTRzE-1TfW70w" target="_blank" rel="external nofollow">https://pan.baidu.com/s/14LJCa2JRmuTRzE-1TfW70w</a> 提取码: sy3b</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;河南省2013-2019年中职生对口升学各专业考试试卷下载&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="历年试卷" scheme="https://ss102.ren/tags/%E5%8E%86%E5%B9%B4%E8%AF%95%E5%8D%B7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于PTA中使用scanf()忽略返回值导致报错</title>
+    <link href="https://ss102.ren/uncategorized/%E5%85%B3%E4%BA%8EPTA%E4%B8%AD%E4%BD%BF%E7%94%A8scanf%E5%BF%BD%E7%95%A5%E8%BF%94%E5%9B%9E%E5%80%BC%E5%AF%BC%E8%87%B4%E6%8A%A5%E9%94%99/"/>
+    <id>https://ss102.ren/uncategorized/%E5%85%B3%E4%BA%8EPTA%E4%B8%AD%E4%BD%BF%E7%94%A8scanf%E5%BF%BD%E7%95%A5%E8%BF%94%E5%9B%9E%E5%80%BC%E5%AF%BC%E8%87%B4%E6%8A%A5%E9%94%99/</id>
+    <published>2020-06-02T18:35:47.000Z</published>
+    <updated>2020-10-23T09:21:05.804Z</updated>
+    
+    <content type="html"><![CDATA[<p>代码：</p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* PTA 7-7 计算摄氏温度 */</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">int</span> fahrenheit,celsius;</span><br><span class="line">    </span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;fahrenheit);</span><br><span class="line">    </span><br><span class="line">    celsius = <span class="number">5</span> * (fahrenheit - <span class="number">32</span>)/<span class="number">9</span>;</span><br><span class="line">    </span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"Celsius = %d"</span>, celsius);</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>报错如下：</p><p><img src="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/20200603025821.png" alt="image-20200603023836964"></p><p>原因是<code>scanf()</code>是有返回值的，编写的代码把返回值丢弃不用，这样就会导致运行时如果输入的格式不对就可能出问题，特别是在循环中。</p><a id="more"></a><p>解决方案：</p><p>1.强制将返回值转换为viod（空）</p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(<span class="keyword">void</span>)<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;null);</span><br></pre></td></tr></table></figure><p>2.通过<code>if</code>来避免警告</p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;null))&#123;&#125;;</span><br></pre></td></tr></table></figure><p>PTA的编译器过于严格，在其他的一些旧的编译器上可能不会出现上述情况，但<code>scanf()</code>在通常情况下，不应忽略返回值，因此编译器返回了一个warning。</p><p>一般来讲，PTA中如果程序能通过，warning可以不用理会，但在生产环境中需特别注意。</p><hr><p>参考网站</p><ol><li><a href="https://bbs.csdn.net/topics/380064095" target="_blank" rel="external nofollow">有关scanf的一句警告-CSDN论坛</a></li><li><a href="https://www.e-learn.cn/content/wangluowenzhang/88661" target="_blank" rel="external nofollow">Warning: ignoring return value of ‘scanf’, declared with attribute warn_unused_result | 易学教程</a></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;代码：&lt;/p&gt;
+&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;/* PTA 7-7 计算摄氏温度 */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; fahrenheit,celsius;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;built_in&quot;&gt;scanf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%d&quot;&lt;/span&gt;, &amp;amp;fahrenheit);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    celsius = &lt;span class=&quot;number&quot;&gt;5&lt;/span&gt; * (fahrenheit - &lt;span class=&quot;number&quot;&gt;32&lt;/span&gt;)/&lt;span class=&quot;number&quot;&gt;9&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;Celsius = %d&quot;&lt;/span&gt;, celsius);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+
+
+&lt;p&gt;报错如下：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/20200603025821.png&quot; alt=&quot;image-20200603023836964&quot;&gt;&lt;/p&gt;
+&lt;p&gt;原因是&lt;code&gt;scanf()&lt;/code&gt;是有返回值的，编写的代码把返回值丢弃不用，这样就会导致运行时如果输入的格式不对就可能出问题，特别是在循环中。&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="PTA" scheme="https://ss102.ren/tags/PTA/"/>
+    
+      <category term="C语言" scheme="https://ss102.ren/tags/C%E8%AF%AD%E8%A8%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vscode一些基本知识</title>
+    <link href="https://ss102.ren/uncategorized/vscode%E4%B8%80%E4%BA%9B%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86/"/>
+    <id>https://ss102.ren/uncategorized/vscode%E4%B8%80%E4%BA%9B%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86/</id>
+    <published>2020-05-16T16:56:27.000Z</published>
+    <updated>2020-10-23T09:20:26.468Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>转载自 IT运维笔记 vscode 一些基本知识 <a href="http://www.i01.org/show.php?id=312" target="_blank" rel="external nofollow">http://www.i01.org/show.php?id=312</a></p></blockquote><p>Visual Studio Code (简称 VS Code / VSC) 是一款免费开源的现代化轻量级代码编辑器，支持几乎所有主流的开发语言的语法高亮、智能代码补全、自定义热键、括号匹配、代码片段、代码对比 Diff、GIT 等特性，支持插件扩展，并针对网页开发和云端应用开发做了优化。软件跨平台支持 Win、Mac 以及 Linux。</p><p>vscode  作为一款逐渐火热的编辑器。它的特点免费、开源、多平台，以及集成git，代码调试，插件丰富等有点，被大家逐渐熟知和认可。</p><a id="more"></a><h2 id="前端常用插件"><a href="#前端常用插件" class="headerlink" title="前端常用插件"></a>前端常用插件</h2><p>Auto Rename Tag<br>自动重命名配对的HTML / XML标签</p><p>background<br>修改背景，设置编辑器界面的背景图片。但是好像现在会出错，具体设置内容在vsc找到插件看详细信息。</p><p>Bootstrap 4 &amp; Font awesome snippets<br>bootstrap4和font awesome 快速引用和代码生成。</p><p>Color-Highlight<br>在编辑器中高亮显示颜色。</p><p>Color Picker<br>代码的颜色选择器。</p><p>Css Peek<br>能在源代码中的字符串中找到对应的css（类和ID）。显示在那个css文件里，还有在第几行。</p><p>Csscomb<br>css 、less、sass 的代码格式化。</p><p>Debugger for Chrome<br>js调试的插件，前端项目在Chrome中运行起来之后，可以直接在VSCode中打断点、查看输出、查看控制台，详细配置见插件说明。</p><p>Document This<br>为js文件生成文档的代码注释。</p><p>ESLint<br>检查Javascript编程时的语法错误。</p><p>Git Easy<br>增加了vscode中自带的git操作，安装后按F1调出控制台，输入git easy [options]完成git操作，代替git bash。</p><p>Git History<br>查看git日志以及图表和详细信息。<br>查看文件的历史记录（Git日志）或文件中的行历史（Git Blame）</p><p>Guides<br>代码的标签对齐线。</p><p>HTML CSS Class Completion<br>为基于工作空间上的CSS文件的HTML类属性提供CSS类名称提示。</p><p>HTML Boilerplate<br>提供生成标准HTML样板代码。</p><p>HTML CSS support<br>css 自动补齐</p><p>HTML Snippets<br>支持HTML5标签提示</p><p>JavaScript (ES6) snippets<br>支持JavaScript  ES6 语法</p><p>jQuery Code Snippets<br>jq代码段提示。</p><p>JS-CSS-HTML  Formatter<br>代码格式化。</p><p>Lodash<br>lodash 函数提示。</p><p>Lorem ipsum<br>快速填充文本</p><p>Npm Intellisense<br>在import语句中自动完成npm模块引入的代码插件。</p><p>open in browser<br>在浏览器中打开，安装后在左侧目录中右键点击会出现 open in browser 选项。</p><p>Path Intellisense<br>文件路径提示。</p><p>Settings Sync<br>编辑器设置同步，包括插件，配置等。<br>详情点击=》<a href="https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync" target="_blank" rel="external nofollow">https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync</a></p><p>VS Code CSS Comments<br>css代码注释。</p><p>vscode-browser-plugin<br>在编辑器内预览HTML，<br>通过开启端口(3000)监听当前打开项目的根目录，在编辑器内预览网站，省去了频繁切换浏览器、编辑器看页面效果，修改代码后自动刷新页面。</p><p>vscode-icons<br>文件图标。</p><p>Vue 2 Snippets<br>vue 代码提示，高亮。<br>（ps：使用其他框架，直接搜就好，像是react，angular，就会出现相关的代码提示和语法支持常用插件）</p><p>主题插件：<br>Material-theme；<br>monokai-light;<br>Monokai++;<br>One Dark Theme;</p><hr><h2 id="vsc常用快捷键"><a href="#vsc常用快捷键" class="headerlink" title="vsc常用快捷键"></a>vsc常用快捷键</h2><p>同时打开多个窗口（查看多个项目）<br>打开一个新窗口： Ctrl+Shift+N<br>关闭窗口： Ctrl+Shift+W<br>同时打开多个编辑器（查看多个文件）</p><p>新建文件 Ctrl+N<br>历史打开文件之间切换 Ctrl+Tab，Alt+Left，Alt+Right<br>切出一个新的编辑器（最多3个）Ctrl+\，也可以按住Ctrl鼠标点击Explorer里的文件名<br>左中右3个编辑器的快捷键Ctrl+1 Ctrl+2 Ctrl+3<br>3个编辑器之间循环切换 Ctrl+`<br>编辑器换位置，Ctrl+k然后按Left或Right<br>格式调整</p><p>代码行缩进Ctrl+[， Ctrl+]<br>折叠打开代码块 Ctrl+Shift+[， Ctrl+Shift+]<br>Ctrl+C Ctrl+V如果不选中，默认复制或剪切一整行<br>代码格式化：Shift+Alt+F，或Ctrl+Shift+P后输入format code<br>修剪空格Ctrl+Shift+X<br>上下移动一行： Alt+Up 或 Alt+Down<br>向上向下复制一行： Shift+Alt+Up或Shift+Alt+Down<br>在当前行下边插入一行Ctrl+Enter<br>在当前行上方插入一行Ctrl+Shift+Enter<br>光标相关</p><p>移动到行首：Home<br>移动到行尾：End<br>移动到文件结尾：Ctrl+End<br>移动到文件开头：Ctrl+Home<br>移动到后半个括号 Ctrl+Shift+]<br>选中当前行Ctrl+i（双击）<br>选择从光标到行尾Shift+End<br>选择从行首到光标处Shift+Home<br>删除光标右侧的所有字Ctrl+Delete<br>Shrink/expand selection： Shift+Alt+Left和Shift+Alt+Right<br>Multi-Cursor：可以连续选择多处，然后一起修改，Alt+Click添加cursor或者Ctrl+Alt+Down 或 Ctrl+Alt+Up<br>同时选中所有匹配的Ctrl+Shift+L<br>Ctrl+D下一个匹配的也被选中(被我自定义成删除当前行了，见下边Ctrl+Shift+K)<br>回退上一个光标操作Ctrl+U<br>重构代码</p><p>跳转到定义处：F12<br>定义处缩略图：只看一眼而不跳转过去Alt+F12<br>列出所有的引用：Shift+F12<br>同时修改本文件中所有匹配的：Ctrl+F12<br>重命名：比如要修改一个方法名，可以选中后按F2，输入新的名字，回车，会发现所有的文件都修改过了。<br>跳转到下一个Error或Warning：当有多个错误时可以按F8逐个跳转<br>查看diff 在explorer里选择文件右键 Set file to compare，然后需要对比的文件上右键选择Compare with ‘file_name_you_chose’.<br>查找替换</p><p>查找 Ctrl+F<br>查找替换 Ctrl+H<br>整个文件夹中查找 Ctrl+Shift+F<br>显示相关</p><p>全屏：F11<br>zoomIn/zoomOut：Ctrl + =/Ctrl + -<br>侧边栏显/隐：Ctrl+B<br>预览markdown Ctrl+Shift+V<br>其他<br>自动保存：File -&gt; AutoSave ，或者Ctrl+Shift+P，输入 auto</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;转载自 IT运维笔记 vscode 一些基本知识 &lt;a href=&quot;http://www.i01.org/show.php?id=312&quot; target=&quot;_blank&quot; rel=&quot;external nofollow&quot;&gt;http://www.i01.org/show.php?id=312&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Visual Studio Code (简称 VS Code / VSC) 是一款免费开源的现代化轻量级代码编辑器，支持几乎所有主流的开发语言的语法高亮、智能代码补全、自定义热键、括号匹配、代码片段、代码对比 Diff、GIT 等特性，支持插件扩展，并针对网页开发和云端应用开发做了优化。软件跨平台支持 Win、Mac 以及 Linux。&lt;/p&gt;
+&lt;p&gt;vscode  作为一款逐渐火热的编辑器。它的特点免费、开源、多平台，以及集成git，代码调试，插件丰富等有点，被大家逐渐熟知和认可。&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="VSCode" scheme="https://ss102.ren/tags/VSCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于静态博客的评论系统</title>
+    <link href="https://ss102.ren/uncategorized/%E5%85%B3%E4%BA%8E%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/"/>
+    <id>https://ss102.ren/uncategorized/%E5%85%B3%E4%BA%8E%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/</id>
+    <published>2020-05-10T04:51:29.000Z</published>
+    <updated>2020-10-23T09:20:03.136Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><ul><li><p>基于第三方：Disqus/Livere（来必力）/Valine</p></li><li><p>基于Github issue：Gitment/Gitalk/utterances/Vssue</p></li><li><p>纯静态：Staticman</p></li><li><p>自建：ISSO/HashOver</p></li></ul></blockquote><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>博客系统众多，WordPress，Emlog，Typecho等等，都有自带的评论系统，而静态博客系统 诸如 Hexo，Jekyll，Hugo等，都没有自带的评论系统，于是第三方评论系统就兴起了。这里只列举部分。</p><a id="more"></a><h3 id="基于第三方"><a href="#基于第三方" class="headerlink" title="基于第三方"></a>基于第三方</h3><h4 id="Disqus"><a href="#Disqus" class="headerlink" title="Disqus"></a>Disqus</h4><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">https://disqus.com</span></span><br></pre></td></tr></table></figure><p>大陆已无法使用。</p><h4 id="Livere（来必力）"><a href="#Livere（来必力）" class="headerlink" title="Livere（来必力）"></a>Livere（来必力）</h4><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">https://livere.com</span></span><br></pre></td></tr></table></figure><p>韩国的一家评论系统，支持中文，使用邮箱注册。支持国内多家社交平台登录，颜值很高。</p><p><img src="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/22.jpg" alt></p><h4 id="Valine"><a href="#Valine" class="headerlink" title="Valine"></a>Valine</h4><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">https://valine.js.org/</span></span><br></pre></td></tr></table></figure><p>一款基于LeanCloud的快速、简洁且高效的无后端评论系统。</p><p>可以安装拓展插件 进行评论回复邮件的通知 <a href="https://github.com/zhaojun1998/Valine-Admin" target="_blank" rel="external nofollow">Valine-Admin</a></p><h3 id="基于Github-issue"><a href="#基于Github-issue" class="headerlink" title="基于Github issue"></a>基于Github issue</h3><h4 id="Gitment"><a href="#Gitment" class="headerlink" title="Gitment"></a>Gitment</h4><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">https://github.com/imsun/gitment</span></span><br></pre></td></tr></table></figure><p>中文介绍：<a href="https://imsun.net/posts/gitment-introduction/" target="_blank" rel="external nofollow">Gitment</a> 优点就不说了。</p><p>缺点：只支持GitHub登录，长期未维护。</p><h4 id="Gitalk"><a href="#Gitalk" class="headerlink" title="Gitalk"></a>Gitalk</h4><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">https://gitalk.github.io</span></span><br></pre></td></tr></table></figure><p>一个基于 Github Issue 和 Preact 开发的评论插件。</p><p>和Gitment类似 <a href="https://github.com/gitalk/gitalk#install" target="_blank" rel="external nofollow">安装使用</a> </p><h4 id="utterances"><a href="#utterances" class="headerlink" title="utterances"></a>utterances</h4><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">https://github.com/utterance/utterances</span></span><br></pre></td></tr></table></figure><p>官方介绍：</p><blockquote><p>一个基于GitHub issue的轻量级评论小部件。</p></blockquote><p><a href="https://utteranc.es/" target="_blank" rel="external nofollow">官网</a></p><h4 id="Vssue"><a href="#Vssue" class="headerlink" title="Vssue"></a>Vssue</h4><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">https://vssue.js.org/</span></span><br></pre></td></tr></table></figure><p>Vssue 是一个 Vue 组件 / 插件，可以为你的静态页面开启评论功能。</p><p>Vssue 名字的由来：由 Vue 驱动并基于 Issue 实现。</p><h5 id="vssue与类似项目比较"><a href="#vssue与类似项目比较" class="headerlink" title="vssue与类似项目比较"></a>vssue与类似项目比较</h5><p><strong>Vssue</strong> 的灵感来自于 <a href="https://github.com/imsun/gitment" target="_blank" rel="external nofollow"><strong>Gitment</strong></a> 和 <a href="https://github.com/gitalk/gitalk" target="_blank" rel="external nofollow"><strong>Gitalk</strong></a>，但是和它们有些区别：</p><ul><li><strong>Vssue</strong> 支持 Github, Gitlab, Bitbucket, Gitee 和 Gitea，并且很容易扩展到其它平台。<strong>Gitment</strong> 和 <strong>Gitalk</strong> 仅支持 Github。</li><li><strong>Vssue</strong> 可以发表、编辑、删除评论。<strong>Gitment</strong> 和 <strong>Gitalk</strong> 仅能发表评论。</li><li><strong>Vssue</strong> 是基于 <a href="https://vuejs.org/" target="_blank" rel="external nofollow">Vue.js</a> 开发的，可以集成到 Vue 项目中，并且提供了一个 <a href="https://vssue.js.org/zh/guide/vuepress.html" target="_blank" rel="external nofollow">VuePress 插件</a>。 <strong>Gitment</strong> 基于原生JS，而 <strong>Gitalk</strong> 基于 <a href="https://github.com/developit/preact" target="_blank" rel="external nofollow">Preact</a>。</li></ul><h3 id="纯静态"><a href="#纯静态" class="headerlink" title="纯静态"></a>纯静态</h3><h4 id="Staticman"><a href="#Staticman" class="headerlink" title="Staticman"></a>Staticman</h4><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">https://staticman.net</span></span><br></pre></td></tr></table></figure><p>顾名思义 纯静态评论系统 指用户进行评论生成内容等操作时，将输入内容与其余内容一起重新生成并上传到GitHub repo中。<a href="http://popcorn.staticman.net/" target="_blank" rel="external nofollow">演示页面</a></p><h3 id="自建评论系统"><a href="#自建评论系统" class="headerlink" title="自建评论系统"></a>自建评论系统</h3><h4 id="ISSO"><a href="#ISSO" class="headerlink" title="ISSO"></a>ISSO</h4><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">https://posativ.org/isso</span></span><br></pre></td></tr></table></figure><p>官方介绍：</p><blockquote><p>与Disqus类似的评论系统</p></blockquote><p>用户可以编辑或删除自己的评论（默认为15分钟内），支持Markdown撰写，轻松迁移自己的Disqus / WordPress评论。</p><h4 id="HashOver"><a href="#HashOver" class="headerlink" title="HashOver"></a>HashOver</h4><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">https://www.barkdull.org/software/hashover</span></span><br></pre></td></tr></table></figure><p>官方介绍：</p><blockquote><p>一个免费开源的PHP评论系统，允许完全匿名的评论和简单的主题化。旨在替代Disqus等专有服务。</p></blockquote><p>特色功能前往<a href="https://www.barkdull.org/software/hashover" target="_blank" rel="external nofollow">官网</a>查看</p><hr><p>本博客目前使用的评论系统是Vssue，后期可能会考虑更换 。</p><h3 id="参考网站"><a href="#参考网站" class="headerlink" title="参考网站"></a>参考网站</h3><ol><li><a href="https://blog.shuiba.co/comment-systems-recommendation" target="_blank" rel="external nofollow">第三方评论系统推荐 - 水八口记</a></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;基于第三方：Disqus/Livere（来必力）/Valine&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;基于Github issue：Gitment/Gitalk/utterances/Vssue&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;纯静态：Staticman&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;自建：ISSO/HashOver&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h3&gt;&lt;p&gt;博客系统众多，WordPress，Emlog，Typecho等等，都有自带的评论系统，而静态博客系统 诸如 Hexo，Jekyll，Hugo等，都没有自带的评论系统，于是第三方评论系统就兴起了。这里只列举部分。&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="Comments" scheme="https://ss102.ren/tags/Comments/"/>
+    
+  </entry>
+  
+</feed>

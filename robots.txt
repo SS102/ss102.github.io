@@ -1,0 +1,8 @@
+User-agent: * Allow: /
+Allow: /archives/
+Disallow: /vendors/
+Disallow: /categories/
+
+
+Sitemap: https://ss102.ren/sitemap.xml
+Sitemap: https://ss102.ren/baidusitemap.xml
