@@ -1,20 +1,339 @@
-extends partial/layout
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>小米笔记本PRO BIOS忘记密码后重置教程 | 张宸 blog</title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="小米笔记本PRO BIOS忘记密码后重置教程问题如下：   前言电脑型号：小米笔记本Pro 15.6寸，显卡MX150 8代i5 8GB内存 TM1701 原BIOS 版本&#x2F;日期	INSYDE Corp. XMAKB5R0P0A07, 2018&#x2F;12&#x2F;07 其他型号电脑请谨慎尝试。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="小米笔记本PRO BIOS忘记密码后重置教程">
+<meta property="og:url" content="https://ss102.ren/uncategorized/%E5%B0%8F%E7%B1%B3%E7%AC%94%E8%AE%B0%E6%9C%ACPRO-BIOS%E5%BF%98%E8%AE%B0%E5%AF%86%E7%A0%81%E5%90%8E%E9%87%8D%E7%BD%AE%E6%95%99%E7%A8%8B/index.html">
+<meta property="og:site_name" content="张宸 blog">
+<meta property="og:description" content="小米笔记本PRO BIOS忘记密码后重置教程问题如下：   前言电脑型号：小米笔记本Pro 15.6寸，显卡MX150 8代i5 8GB内存 TM1701 原BIOS 版本&#x2F;日期	INSYDE Corp. XMAKB5R0P0A07, 2018&#x2F;12&#x2F;07 其他型号电脑请谨慎尝试。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/202208251324264.png">
+<meta property="og:image" content="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/5ed8d28d6906900159be5945211d7cb.jpg">
+<meta property="og:image" content="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/202208251242069.png">
+<meta property="og:image" content="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/202208251243627.jpg">
+<meta property="og:image" content="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/202208251244715.jpg">
+<meta property="og:image" content="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/202208251245804.jpg">
+<meta property="og:image" content="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/202208251245739.jpg">
+<meta property="og:image" content="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/202208251246208.jpg">
+<meta property="og:image" content="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/202208251246610.jpg">
+<meta property="og:image" content="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/202208251247432.jpg">
+<meta property="og:image" content="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/202208251247164.jpg">
+<meta property="og:image" content="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/202208251248013.jpg">
+<meta property="og:image" content="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/202208251248788.png">
+<meta property="og:image" content="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/202208251250684.png">
+<meta property="og:image" content="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/202208251250852.png">
+<meta property="og:image" content="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/202208251251605.png">
+<meta property="og:image" content="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/202208251251693.png">
+<meta property="og:image" content="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/202208251251748.jpg">
+<meta property="article:published_time" content="2022-08-25T07:28:37.000Z">
+<meta property="article:modified_time" content="2022-08-25T15:20:21.430Z">
+<meta property="article:author" content="张宸">
+<meta property="article:tag" content="小米笔记本Pro">
+<meta property="article:tag" content="BIOS密码忘记">
+<meta property="article:tag" content="编程器烧录工具">
+<meta property="article:tag" content="CH341A">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/202208251324264.png">
+  
+    <link rel="alternative" href="/atom.xml" title="张宸 blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
 
-block site_title
-    != page.title + " · " + config.title
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
 
-block description
-    - var desc = page.desc || page.title + ' - ' + config.author;
-    meta(name="description", content=desc)
+<meta name="generator" content="Hexo 6.2.0"></head>
 
-block container
-    include mixins/post
-    +post(page)
+<body>
+  <div id="container">
+    <div class="mobile-nav-panel">
+  <i class="icon-reorder icon-large"></i>
+</div>
+<header id="header">
+  <h1 class="blog-title">
+    <a href="/">张宸 blog</a>
+  </h1>
+  <nav class="nav">
+    <ul>
+      <li><a href="/">主页</a></li><li><a href="/archives">存档</a></li>
+      <li><a id="nav-search-btn" class="nav-icon" title="搜索"></a></li>
+      <li><a href="/atom.xml" id="nav-rss-link" class="nav-icon" title="RSS 订阅"></a></li>
+    </ul>
+  </nav>
+  <div id="search-form-wrap">
+    <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://ss102.ren"></form>
+  </div>
+</header>
 
-block pagination
-    include mixins/paginator
-    +post()
-    include partial/comment
+    <section id="main">
+      <article id="post-小米笔记本PRO-BIOS忘记密码后重置教程" class="post">
+  <header class="entry-meta-header">
+    <span class="meta-elements date">
+      <a href="/uncategorized/%E5%B0%8F%E7%B1%B3%E7%AC%94%E8%AE%B0%E6%9C%ACPRO-BIOS%E5%BF%98%E8%AE%B0%E5%AF%86%E7%A0%81%E5%90%8E%E9%87%8D%E7%BD%AE%E6%95%99%E7%A8%8B/" class="article-date">
+  <time datetime="2022-08-25T07:28:37.000Z" itemprop="datePublished">2022-08-25</time>
+</a>
 
-block copyright
-    include partial/copyright
+    </span>
+    <span class="meta-elements author">张宸</span>
+    <div class="commentscount">
+      
+    </div>
+  </header>
+  
+
+  <header class="entry-header">
+    
+  
+    <h1 class="article-title entry-title" itemprop="name">
+      小米笔记本PRO BIOS忘记密码后重置教程
+    </h1>
+  
+
+
+  </header>
+  <div class="entry-content">
+    
+      <h3 id="小米笔记本PRO-BIOS忘记密码后重置教程"><a href="#小米笔记本PRO-BIOS忘记密码后重置教程" class="headerlink" title="小米笔记本PRO BIOS忘记密码后重置教程"></a>小米笔记本PRO BIOS忘记密码后重置教程</h3><p>问题如下：</p>
+<img src="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/202208251324264.png" style="zoom:50%;" />
+
+<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>电脑型号：小米笔记本Pro 15.6寸，显卡MX150 8代i5 8GB内存 TM1701</p>
+<p>原BIOS 版本&#x2F;日期	INSYDE Corp. XMAKB5R0P0A07, 2018&#x2F;12&#x2F;07</p>
+<p>其他型号电脑请谨慎尝试。</p>
+<span id="more"></span>
+
+<h3 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h3><p>设置BIOS密码的原因是之前给小米pro装双系统，新装了一块硬盘，装了黑苹果，当时也忘了具体出于什么原因设置的，之前笔记本电源线出了问题要到售后去换，工作人员要求进BIOS页面查看序列号，输了之前设置的密码后发现错误，而且我记得密码绝对没错，但就是显示密码错误，我问工作人员有什么解决办法没，他说像这种情况可能要换主板之类的，而且还不在保修范围内，我一想还是算了，反正可以正常进系统，只是BIOS页面进不去，直到有一天机缘巧合之下看到一篇文章。</p>
+<p><a target="_blank" rel="noopener" href="https://tieba.baidu.com/p/6686432241">https://tieba.baidu.com/p/6686432241</a></p>
+<p>发现这位老哥情况跟我类似，但当时因为这位老哥笔记本型号跟我的不一样，BIOS文件并不能通用，也没有具体的操作流程，故而放弃。</p>
+<p>再之后一段时间看到了这篇文章<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/432468267">https://zhuanlan.zhihu.com/p/432468267</a></p>
+<p>发现情况类似，笔记本型号也类似，操作流程也基本的写的较清楚，我看到了希望，按着老哥写的流程操作下来成功的擦除了BIOS密码。我写这篇文章的原因是想对以上两位老哥的文章内容进行补充，毕竟有新手小白在看到后这么复杂可能会劝退。</p>
+<h3 id="准备工具"><a href="#准备工具" class="headerlink" title="准备工具"></a>准备工具</h3><blockquote>
+<ul>
+<li>拆机工具：六角梅花螺丝刀T5、撬棒、吸盘、垫片等。（某宝可以买的到）</li>
+<li>BIOS芯片编程器烧录工具。（某宝购买）具体型号可参考我的</li>
+<li>自己笔记本电脑的原版BIOS文件。（.BIN结尾）WIN+R 输入msinfo32查看版号</li>
+<li>小米笔记本Pro （待解锁的笔记本）</li>
+<li>另一台电脑（台式、笔记本均可）</li>
+</ul>
+</blockquote>
+<p>关于寻找原版的BIOS文件我的建议是去某宝的一些店铺找客服让他给你寻找，某宝搜索关键字：（小米笔记本Pro bios文件）把电脑型号及原BIOS版号发给他就可以。一般价格在8-10元不等。或者自行去搜索引擎搜索你的电脑型号及BIOS版号关键字看能不能找到。<u><strong>再或者去找身边的朋友看看有没有用同款笔记本的，按照下面的方法，把他电脑上的文件提取出来。</strong></u>注意文件是以.BIN结尾。因为电脑型号不同BIOS版本不同故文件不能通用，这方面我也不能帮到你太多，除非你的电脑型号和BIOS版本跟我的型号一样。</p>
+<p>烧录工具：某宝搜索关键字（CH341A编程器）记得购买的时候选择编程器+烧录夹配套使用。</p>
+<img src="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/5ed8d28d6906900159be5945211d7cb.jpg" alt="5ed8d28d6906900159be5945211d7cb"  />
+
+<h3 id="需要下载的软件"><a href="#需要下载的软件" class="headerlink" title="需要下载的软件"></a>需要下载的软件</h3><img src="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/202208251242069.png" alt="202208251242069"  />
+
+<p>下载链接：<a target="_blank" rel="noopener" href="https://wwt.lanzouv.com/ivNRx0a83oqh">https://wwt.lanzouv.com/ivNRx0a83oqh</a></p>
+<p>说明：当时我寻找BIOS文件的时候并没有找到原版的，某宝卖家发给我了一个XMAKB5R0P0300.BIN的版本，就是上图0300.BIN这个文件，后续烧录的时候用这个成功烧录，开机正常也成功擦除了BIOS密码，但是由于版号不对造成开机风扇狂转发热等问题，后来我又找到了升级XMAKB5R0P0A07的exe文件，通过升级成功恢复了原本的BIOS版本。</p>
+<p>我的操作流程：先用XMAKB5R0P0300的版本成功擦除BIOS密码，后续开机后通过XMAKB5R0P0A07的升级文件进行升级。（谨慎参考，如果可以找到原版的BIOS文件，建议直接用原版的进行烧录，不建议使用这种二次升级的办法）。</p>
+<h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><ol>
+<li>将原本笔记本上的重要文件做好备份，防止操作失误，造成文件丢失。</li>
+<li>下载需要使用到的软件及文件</li>
+<li>在另一台电脑上安装要使用到的烧录软件，并打开。</li>
+</ol>
+<h3 id="开始解锁"><a href="#开始解锁" class="headerlink" title="开始解锁"></a>开始解锁</h3><h4 id="步骤1-拆机"><a href="#步骤1-拆机" class="headerlink" title="步骤1 拆机"></a>步骤1 拆机</h4><p>将小米笔记本关机，使用上面提到的专用拆机工具卸掉笔记本的后盖板。</p>
+<blockquote>
+<p>拆机图文：<a target="_blank" rel="noopener" href="https://juejin.cn/post/6844904023238279182#heading-1">https://juejin.cn/post/6844904023238279182#heading-1</a></p>
+</blockquote>
+<blockquote>
+<p>拆机视频：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV12K4y1K7iW?share_source=copy_web&amp;vd_source=a1fee8248328e3e32f89e8c7d4e2b5b5">https://www.bilibili.com/video/BV12K4y1K7iW?share_source=copy_web&amp;vd_source=a1fee8248328e3e32f89e8c7d4e2b5b5</a></p>
+</blockquote>
+<p>请参考以上图文和视频正确拆机。</p>
+<h4 id="步骤2-电源断电"><a href="#步骤2-电源断电" class="headerlink" title="步骤2 电源断电"></a>步骤2 电源断电</h4><img src="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/202208251243627.jpg" alt="202208251243627" style="zoom:50%;" />
+
+<p>参考上图在电源排线位置，使用撬棒或其他工具在上方轻轻一翘断开电源。</p>
+<h4 id="步骤3-组装烧录器"><a href="#步骤3-组装烧录器" class="headerlink" title="步骤3 组装烧录器"></a>步骤3 组装烧录器</h4><img src="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/202208251244715.jpg" alt="202208251244715" style="zoom:50%;" />
+
+<p>收到烧录工具后一般会有这么几个东西，组装办法：将转接板与烧录夹连接，再插到编程器上，按下后面档把进行固定。</p>
+<p>组装图文介绍：</p>
+<ol>
+<li>烧录夹与转接板连接，确保烧录夹插上转接板，红线对应数字1插上</li>
+</ol>
+<img src="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/202208251245804.jpg" alt="202208251245804" style="zoom:50%;" />
+
+<ol start="2">
+<li>转接板另一头插上对应25芯片的位置，注意对准1脚</li>
+</ol>
+<img src="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/202208251245739.jpg" alt="202208251245739" style="zoom:50%;" />
+
+<img src="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/202208251246208.jpg" alt="202208251246208" style="zoom:50%;" />
+
+<ol start="3">
+<li><p>组装好示意图</p>
+<img src="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/202208251246610.jpg" alt="202208251246610"  /></li>
+</ol>
+<blockquote>
+<p>组装、夹芯片、烧录软件连接视频讲解①（强烈建议观看）：<a target="_blank" rel="noopener" href="https://www.douyin.com/video/6915379265517260035">https://www.douyin.com/video/6915379265517260035</a></p>
+</blockquote>
+<blockquote>
+<p>组装、夹芯片视频讲解②（强烈建议观看）：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Xa411P7m2?vd_source=a1fee8248328e3e32f89e8c7d4e2b5b5">https://www.bilibili.com/video/BV1Xa411P7m2?vd_source=a1fee8248328e3e32f89e8c7d4e2b5b5</a></p>
+</blockquote>
+<p>以上完成了对烧录工具的组装，如有不懂请反复观看视频讲解。</p>
+<h4 id="步骤4-夹住BIOS芯片"><a href="#步骤4-夹住BIOS芯片" class="headerlink" title="步骤4 夹住BIOS芯片"></a>步骤4 夹住BIOS芯片</h4><p>小米笔记本pro 15.6 BIOS芯片位置：</p>
+<img src="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/202208251247432.jpg" alt="202208251247432" style="zoom:50%;" />
+
+<p>连接示意：</p>
+<img src="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/202208251247164.jpg" alt="202208251247164" style="zoom:50%;" />
+
+<img src="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/202208251248013.jpg" alt="202208251248013" style="zoom:50%;" />
+
+<p>组装、夹芯片、烧录软件连接视频讲解①（强烈建议观看）：<a target="_blank" rel="noopener" href="https://www.douyin.com/video/6915379265517260035">https://www.douyin.com/video/6915379265517260035</a></p>
+<p>组装、夹芯片视频讲解②（强烈建议观看）：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Xa411P7m2?vd_source=a1fee8248328e3e32f89e8c7d4e2b5b5">https://www.bilibili.com/video/BV1Xa411P7m2?vd_source=a1fee8248328e3e32f89e8c7d4e2b5b5</a></p>
+<p>注意：上夹子的时候，一定要小心翼翼的对准BIOS芯片。</p>
+<h4 id="步骤5-连接至另一台电脑"><a href="#步骤5-连接至另一台电脑" class="headerlink" title="步骤5 连接至另一台电脑"></a>步骤5 连接至另一台电脑</h4><p>夹好后，将组装好的烧录工具USB端插入另一台电脑，打开烧录软件</p>
+<img src="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/202208251248788.png" alt="202208251248788" style="zoom:50%;" />
+
+<p>这个时候，如果芯片夹的正确烧录软件右下角设备连接状态会显示：已连接</p>
+<h4 id="步骤6-备份本机BISO文件"><a href="#步骤6-备份本机BISO文件" class="headerlink" title="步骤6 备份本机BISO文件"></a>步骤6 备份本机BISO文件</h4><ol>
+<li><p>连接成功后，点击软件左上方”<strong><u>检测</u></strong>“按钮，看线有没有接对。如果红圈这4行都是<strong>ff</strong>结尾，就是没接对。 如果是其他英文数字就是正确</p>
+<img src="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/202208251250684.png" alt="202208251250684" style="zoom:50%;" />
+</li>
+<li><p>检测出来芯片后，点击工具栏”<strong><u>读取</u></strong>“按钮，读取成功后，点击”<strong><u>保存</u></strong>“按钮将本机备份BIOS文件保存到妥当位置。</p>
+<img src="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/202208251250852.png" alt="202208251250852" style="zoom:50%;" /></li>
+</ol>
+<p>万一BIOS烧录失败，可按步骤7方法重新刷回备份的BIOS文件。</p>
+<p>如果你的笔记本电脑型号和我的一样，你完全可以使用我的BIOS文件，按照我的方法。</p>
+<p>如果不一样，一定一定不要使用我的BIOS文件，你需要自己去寻找BIOS文件，建议上某宝去找。</p>
+<h4 id="步骤7-开始烧录"><a href="#步骤7-开始烧录" class="headerlink" title="步骤7 开始烧录"></a>步骤7 开始烧录</h4><p>在烧录工具与电脑成功连接的状态下，</p>
+<ol>
+<li><p>点击**<u>读取</u>**按钮，读取出来结果之后，</p>
+</li>
+<li><p>点击**<u>擦除</u>**按钮，擦除完成之后会提示你查空，</p>
+</li>
+<li><p>然后点击**<u>查空</u>**按钮，查空完毕显示芯片空白后开始正式烧录</p>
+<img src="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/202208251251605.png" alt="202208251251605" style="zoom:50%;" />
+</li>
+<li><p>点击工具栏**<u>打开</u>**按钮，选择对应的.BIN结尾的BIOS文件，点击打开</p>
+</li>
+</ol>
+<img src="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/202208251251693.png" alt="202208251251693" style="zoom:50%;" />
+
+<ol start="5">
+<li><p>打开后，点击工具栏**<u>编程</u>**按钮，等待编程成功，过程可能需要3-5分钟，</p>
+</li>
+<li><p>编程好了，点击**<u>校验</u>**，会提示已刷入校验完成，表示已经刷好BIOS。</p>
+</li>
+</ol>
+<blockquote>
+<p>注意：编程器上有两个灯，如果是正确识别，两个灯都会亮<br>正确识别需要8个触点都接触良好，如果都接触不好，或者没有连接芯片就会亮一个灯，而且高亮度<br>如果有一两个触点接触不良，也会亮一个灯，但是比没夹上的时候要暗一点<br>完全没有接触点检测的时候显示ff<br>接触不好的时候显示00<br>而且这个大部分的问题都出在接触问题上，调整一下夹子很有可能解决问题，特别是显示00的时候</p>
+</blockquote>
+<h4 id="步骤8-开机测试"><a href="#步骤8-开机测试" class="headerlink" title="步骤8 开机测试"></a>步骤8 开机测试</h4><p>按照步骤烧录完成后，不要着急装盖子，插上电池排线 先开机测试；</p>
+<p>如果不能正常开机，那你检查一下操作步骤，是不是环节出问题了，实在不行，就把备份的BIOS文件刷回去；</p>
+<p>如果能正常开机，那就重启进BIOS试一下，小米笔记本pro重启按F2 进入BIOS；</p>
+<p>如果不需要密码了，就是下面这个效果，那就要恭喜你已经成功的清掉了BIOS密码</p>
+<img src="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/202208251251748.jpg" alt="202208251251748" style="zoom:50%;" />
+
+
+
+<p>基本到这一步，证明你成功擦除掉了BIOS密码，记得检查下BIOS版本跟刷之前的是不是相同。如果你刷入的是自己电脑原版的BIOS文件，那么恭喜你可以装后盖了。</p>
+<p>提示：如果你的电脑型号跟我的一样原BIOS版本也一样，并且按照的是我的方法，先刷<strong>0300.BIN</strong>的情况下。</p>
+<p>那么后续就要通过<strong>XMAKB5R0P0A07.exe</strong>这个软件进行升级恢复到原本的BIOS版本</p>
+<h3 id="0300升级0A07（非必要，注意看上方提示）"><a href="#0300升级0A07（非必要，注意看上方提示）" class="headerlink" title="0300升级0A07（非必要，注意看上方提示）"></a>0300升级0A07（非必要，注意看上方提示）</h3><ol>
+<li><p>右键管理员运行<strong>XMAKB5R0P0A07.exe</strong>这个文件</p>
+</li>
+<li><p>按照提示进行升级操作，全英文界面注意配合翻译软件</p>
+</li>
+<li><p>升级完成后会重启，重启后F2进入BIOS页面查看BIOS版本是否升级成功。</p>
+</li>
+</ol>
+<h3 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h3><blockquote>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/432468267">https://zhuanlan.zhihu.com/p/432468267</a> 作者：隽永</p>
+<p><a target="_blank" rel="noopener" href="https://tieba.baidu.com/p/6686432241">https://tieba.baidu.com/p/6686432241</a> 作者：HomeyK</p>
+<p><a target="_blank" rel="noopener" href="https://juejin.cn/post/6844904023238279182#heading-1">https://juejin.cn/post/6844904023238279182#heading-1</a> 作者：zhzhvdhsnsj</p>
+<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV12K4y1K7iW?share_source=copy_web&amp;vd_source=a1fee8248328e3e32f89e8c7d4e2b5b5">https://www.bilibili.com/video/BV12K4y1K7iW?share_source=copy_web&amp;vd_source=a1fee8248328e3e32f89e8c7d4e2b5b5</a> 作者：还是叫一拳超人吧</p>
+<p><a target="_blank" rel="noopener" href="https://www.douyin.com/video/6915379265517260035">https://www.douyin.com/video/6915379265517260035</a> 作者：电子元器件销售</p>
+<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Xa411P7m2?vd_source=a1fee8248328e3e32f89e8c7d4e2b5b5">https://www.bilibili.com/video/BV1Xa411P7m2?vd_source=a1fee8248328e3e32f89e8c7d4e2b5b5</a> 作者：海海海海盗</p>
+<p><a target="_blank" rel="noopener" href="https://tieba.baidu.com/p/6103207732?pn=1">https://tieba.baidu.com/p/6103207732?pn=1</a> 作者：空城TA梦</p>
+<p><a target="_blank" rel="noopener" href="https://download.csdn.net/download/xj1345/12823607?utm_medium=distribute.pc_relevant_download.none-task-download-2~default~BlogCommendFromBaidu~Rate-1-12823607-download-13104618.dl_default&amp;depth_1-utm_source=distribute.pc_relevant_download.none-task-download-2~default~BlogCommendFromBaidu~Rate-1-12823607-download-13104618.dl_default&amp;dest=https://download.csdn.net/download/xj1345/12823607&amp;spm=1003.2020.3001.6616.1">https://download.csdn.net/download/xj1345/12823607?utm_medium=distribute.pc_relevant_download.none-task-download-2~default~BlogCommendFromBaidu~Rate-1-12823607-download-13104618.dl_default&amp;depth_1-utm_source=distribute.pc_relevant_download.none-task-download-2~default~BlogCommendFromBaidu~Rate-1-12823607-download-13104618.dl_default&amp;dest=https%3A%2F%2Fdownload.csdn.net%2Fdownload%2Fxj1345%2F12823607&amp;spm=1003.2020.3001.6616.1</a> 作者：xj1345（<strong>XMAKB5R0P0A07.exe的提供者</strong>）</p>
+</blockquote>
+<p>如果有任何问题，欢迎留言。</p>
+<p>本文章已同步投稿至</p>
+<p>知乎专栏：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/557485017">https://zhuanlan.zhihu.com/p/557485017</a></p>
+<p>哔哩哔哩专栏：<a target="_blank" rel="noopener" href="https://www.bilibili.com/read/cv18281656">https://www.bilibili.com/read/cv18281656</a></p>
+
+    
+  </div>
+  <footer class="entry-footer">
+    <div class="entry-meta-footer">
+      <span class="category">
+        
+
+      </span>
+      <span class="tags">
+        
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/BIOS%E5%AF%86%E7%A0%81%E5%BF%98%E8%AE%B0/" rel="tag">BIOS密码忘记</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CH341A/" rel="tag">CH341A</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%B0%8F%E7%B1%B3%E7%AC%94%E8%AE%B0%E6%9C%ACPro/" rel="tag">小米笔记本Pro</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%BC%96%E7%A8%8B%E5%99%A8%E7%83%A7%E5%BD%95%E5%B7%A5%E5%85%B7/" rel="tag">编程器烧录工具</a></li></ul>
+
+
+      </span>
+    </div>
+  </footer>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/uncategorized/EasyRecovery-%E6%96%87%E4%BB%B6%E6%95%B0%E6%8D%AE%E6%81%A2%E5%A4%8D%E8%BD%AF%E4%BB%B6/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">上一篇</strong>
+      <div class="article-nav-title">
+        
+          EasyRecovery-文件数据恢复软件
+        
+      </div>
+    </a>
+  
+</nav>
+
+
+  
+</article>
+
+
+
+
+
+
+    </section>
+    <div class="mb-search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜索">
+    <input type="hidden" name="q" value="site:ss102.ren">
+    </form>
+</div>
+<footer id="footer">
+  <h1 class="footer-blog-title">
+    <a href="/">张宸 blog</a>
+  </h1>
+  <span class="copyright">
+    &copy; 2022 张宸<br>
+    Modify from <a href="http://sanographix.github.io/tumblr/apollo/" target="_blank">Apollo</a> theme, designed by <a href="http://www.sanographix.net/" target="_blank">SANOGRAPHIX.NET</a><br>
+    Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+  </span>
+</footer>
+
+    
+
+<script src="//cdn.staticfile.org/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+  </div>
+</body>
+</html>

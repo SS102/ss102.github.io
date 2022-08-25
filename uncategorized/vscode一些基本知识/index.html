@@ -1,20 +1,217 @@
-extends partial/layout
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>vscode一些基本知识 | 张宸 blog</title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="转载自 IT运维笔记 vscode 一些基本知识 http:&#x2F;&#x2F;www.i01.org&#x2F;show.php?id&#x3D;312  Visual Studio Code (简称 VS Code &#x2F; VSC) 是一款免费开源的现代化轻量级代码编辑器，支持几乎所有主流的开发语言的语法高亮、智能代码补全、自定义热键、括号匹配、代码片段、代码对比 Diff、GIT 等特性，支持插件扩展，并针对网页开发和">
+<meta property="og:type" content="article">
+<meta property="og:title" content="vscode一些基本知识">
+<meta property="og:url" content="https://ss102.ren/uncategorized/vscode%E4%B8%80%E4%BA%9B%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86/index.html">
+<meta property="og:site_name" content="张宸 blog">
+<meta property="og:description" content="转载自 IT运维笔记 vscode 一些基本知识 http:&#x2F;&#x2F;www.i01.org&#x2F;show.php?id&#x3D;312  Visual Studio Code (简称 VS Code &#x2F; VSC) 是一款免费开源的现代化轻量级代码编辑器，支持几乎所有主流的开发语言的语法高亮、智能代码补全、自定义热键、括号匹配、代码片段、代码对比 Diff、GIT 等特性，支持插件扩展，并针对网页开发和">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-05-16T16:56:27.000Z">
+<meta property="article:modified_time" content="2020-10-23T09:20:26.468Z">
+<meta property="article:author" content="张宸">
+<meta property="article:tag" content="VSCode">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternative" href="/atom.xml" title="张宸 blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
 
-block site_title
-    != page.title + " · " + config.title
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
 
-block description
-    - var desc = page.desc || page.title + ' - ' + config.author;
-    meta(name="description", content=desc)
+<meta name="generator" content="Hexo 6.2.0"></head>
 
-block container
-    include mixins/post
-    +post(page)
+<body>
+  <div id="container">
+    <div class="mobile-nav-panel">
+  <i class="icon-reorder icon-large"></i>
+</div>
+<header id="header">
+  <h1 class="blog-title">
+    <a href="/">张宸 blog</a>
+  </h1>
+  <nav class="nav">
+    <ul>
+      <li><a href="/">主页</a></li><li><a href="/archives">存档</a></li>
+      <li><a id="nav-search-btn" class="nav-icon" title="搜索"></a></li>
+      <li><a href="/atom.xml" id="nav-rss-link" class="nav-icon" title="RSS 订阅"></a></li>
+    </ul>
+  </nav>
+  <div id="search-form-wrap">
+    <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://ss102.ren"></form>
+  </div>
+</header>
 
-block pagination
-    include mixins/paginator
-    +post()
-    include partial/comment
+    <section id="main">
+      <article id="post-vscode一些基本知识" class="post">
+  <header class="entry-meta-header">
+    <span class="meta-elements date">
+      <a href="/uncategorized/vscode%E4%B8%80%E4%BA%9B%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86/" class="article-date">
+  <time datetime="2020-05-16T16:56:27.000Z" itemprop="datePublished">2020-05-17</time>
+</a>
 
-block copyright
-    include partial/copyright
+    </span>
+    <span class="meta-elements author">张宸</span>
+    <div class="commentscount">
+      
+    </div>
+  </header>
+  
+
+  <header class="entry-header">
+    
+  
+    <h1 class="article-title entry-title" itemprop="name">
+      vscode一些基本知识
+    </h1>
+  
+
+
+  </header>
+  <div class="entry-content">
+    
+      <blockquote>
+<p>转载自 IT运维笔记 vscode 一些基本知识 <a target="_blank" rel="noopener" href="http://www.i01.org/show.php?id=312">http://www.i01.org/show.php?id=312</a></p>
+</blockquote>
+<p>Visual Studio Code (简称 VS Code &#x2F; VSC) 是一款免费开源的现代化轻量级代码编辑器，支持几乎所有主流的开发语言的语法高亮、智能代码补全、自定义热键、括号匹配、代码片段、代码对比 Diff、GIT 等特性，支持插件扩展，并针对网页开发和云端应用开发做了优化。软件跨平台支持 Win、Mac 以及 Linux。</p>
+<p>vscode  作为一款逐渐火热的编辑器。它的特点免费、开源、多平台，以及集成git，代码调试，插件丰富等有点，被大家逐渐熟知和认可。</p>
+<span id="more"></span>
+
+<h2 id="前端常用插件"><a href="#前端常用插件" class="headerlink" title="前端常用插件"></a>前端常用插件</h2><p>Auto Rename Tag<br>自动重命名配对的HTML &#x2F; XML标签</p>
+<p>background<br>修改背景，设置编辑器界面的背景图片。但是好像现在会出错，具体设置内容在vsc找到插件看详细信息。</p>
+<p>Bootstrap 4 &amp; Font awesome snippets<br>bootstrap4和font awesome 快速引用和代码生成。</p>
+<p>Color-Highlight<br>在编辑器中高亮显示颜色。</p>
+<p>Color Picker<br>代码的颜色选择器。</p>
+<p>Css Peek<br>能在源代码中的字符串中找到对应的css（类和ID）。显示在那个css文件里，还有在第几行。</p>
+<p>Csscomb<br>css 、less、sass 的代码格式化。</p>
+<p>Debugger for Chrome<br>js调试的插件，前端项目在Chrome中运行起来之后，可以直接在VSCode中打断点、查看输出、查看控制台，详细配置见插件说明。</p>
+<p>Document This<br>为js文件生成文档的代码注释。</p>
+<p>ESLint<br>检查Javascript编程时的语法错误。</p>
+<p>Git Easy<br>增加了vscode中自带的git操作，安装后按F1调出控制台，输入git easy [options]完成git操作，代替git bash。</p>
+<p>Git History<br>查看git日志以及图表和详细信息。<br>查看文件的历史记录（Git日志）或文件中的行历史（Git Blame）</p>
+<p>Guides<br>代码的标签对齐线。</p>
+<p>HTML CSS Class Completion<br>为基于工作空间上的CSS文件的HTML类属性提供CSS类名称提示。</p>
+<p>HTML Boilerplate<br>提供生成标准HTML样板代码。</p>
+<p>HTML CSS support<br>css 自动补齐</p>
+<p>HTML Snippets<br>支持HTML5标签提示</p>
+<p>JavaScript (ES6) snippets<br>支持JavaScript  ES6 语法</p>
+<p>jQuery Code Snippets<br>jq代码段提示。</p>
+<p>JS-CSS-HTML  Formatter<br>代码格式化。</p>
+<p>Lodash<br>lodash 函数提示。</p>
+<p>Lorem ipsum<br>快速填充文本</p>
+<p>Npm Intellisense<br>在import语句中自动完成npm模块引入的代码插件。</p>
+<p>open in browser<br>在浏览器中打开，安装后在左侧目录中右键点击会出现 open in browser 选项。</p>
+<p>Path Intellisense<br>文件路径提示。</p>
+<p>Settings Sync<br>编辑器设置同步，包括插件，配置等。<br>详情点击&#x3D;》<a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync">https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync</a></p>
+<p>VS Code CSS Comments<br>css代码注释。</p>
+<p>vscode-browser-plugin<br>在编辑器内预览HTML，<br>通过开启端口(3000)监听当前打开项目的根目录，在编辑器内预览网站，省去了频繁切换浏览器、编辑器看页面效果，修改代码后自动刷新页面。</p>
+<p>vscode-icons<br>文件图标。</p>
+<p>Vue 2 Snippets<br>vue 代码提示，高亮。<br>（ps：使用其他框架，直接搜就好，像是react，angular，就会出现相关的代码提示和语法支持常用插件）</p>
+<p>主题插件：<br>Material-theme；<br>monokai-light;<br>Monokai++;<br>One Dark Theme;</p>
+<hr>
+<h2 id="vsc常用快捷键"><a href="#vsc常用快捷键" class="headerlink" title="vsc常用快捷键"></a>vsc常用快捷键</h2><p>同时打开多个窗口（查看多个项目）<br>打开一个新窗口： Ctrl+Shift+N<br>关闭窗口： Ctrl+Shift+W<br>同时打开多个编辑器（查看多个文件）</p>
+<p>新建文件 Ctrl+N<br>历史打开文件之间切换 Ctrl+Tab，Alt+Left，Alt+Right<br>切出一个新的编辑器（最多3个）Ctrl+\，也可以按住Ctrl鼠标点击Explorer里的文件名<br>左中右3个编辑器的快捷键Ctrl+1 Ctrl+2 Ctrl+3<br>3个编辑器之间循环切换 Ctrl+&#96;<br>编辑器换位置，Ctrl+k然后按Left或Right<br>格式调整</p>
+<p>代码行缩进Ctrl+[， Ctrl+]<br>折叠打开代码块 Ctrl+Shift+[， Ctrl+Shift+]<br>Ctrl+C Ctrl+V如果不选中，默认复制或剪切一整行<br>代码格式化：Shift+Alt+F，或Ctrl+Shift+P后输入format code<br>修剪空格Ctrl+Shift+X<br>上下移动一行： Alt+Up 或 Alt+Down<br>向上向下复制一行： Shift+Alt+Up或Shift+Alt+Down<br>在当前行下边插入一行Ctrl+Enter<br>在当前行上方插入一行Ctrl+Shift+Enter<br>光标相关</p>
+<p>移动到行首：Home<br>移动到行尾：End<br>移动到文件结尾：Ctrl+End<br>移动到文件开头：Ctrl+Home<br>移动到后半个括号 Ctrl+Shift+]<br>选中当前行Ctrl+i（双击）<br>选择从光标到行尾Shift+End<br>选择从行首到光标处Shift+Home<br>删除光标右侧的所有字Ctrl+Delete<br>Shrink&#x2F;expand selection： Shift+Alt+Left和Shift+Alt+Right<br>Multi-Cursor：可以连续选择多处，然后一起修改，Alt+Click添加cursor或者Ctrl+Alt+Down 或 Ctrl+Alt+Up<br>同时选中所有匹配的Ctrl+Shift+L<br>Ctrl+D下一个匹配的也被选中(被我自定义成删除当前行了，见下边Ctrl+Shift+K)<br>回退上一个光标操作Ctrl+U<br>重构代码</p>
+<p>跳转到定义处：F12<br>定义处缩略图：只看一眼而不跳转过去Alt+F12<br>列出所有的引用：Shift+F12<br>同时修改本文件中所有匹配的：Ctrl+F12<br>重命名：比如要修改一个方法名，可以选中后按F2，输入新的名字，回车，会发现所有的文件都修改过了。<br>跳转到下一个Error或Warning：当有多个错误时可以按F8逐个跳转<br>查看diff 在explorer里选择文件右键 Set file to compare，然后需要对比的文件上右键选择Compare with ‘file_name_you_chose’.<br>查找替换</p>
+<p>查找 Ctrl+F<br>查找替换 Ctrl+H<br>整个文件夹中查找 Ctrl+Shift+F<br>显示相关</p>
+<p>全屏：F11<br>zoomIn&#x2F;zoomOut：Ctrl + &#x3D;&#x2F;Ctrl + -<br>侧边栏显&#x2F;隐：Ctrl+B<br>预览markdown Ctrl+Shift+V<br>其他<br>自动保存：File -&gt; AutoSave ，或者Ctrl+Shift+P，输入 auto</p>
+
+    
+  </div>
+  <footer class="entry-footer">
+    <div class="entry-meta-footer">
+      <span class="category">
+        
+
+      </span>
+      <span class="tags">
+        
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/VSCode/" rel="tag">VSCode</a></li></ul>
+
+
+      </span>
+    </div>
+  </footer>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/uncategorized/%E5%85%B3%E4%BA%8EPTA%E4%B8%AD%E4%BD%BF%E7%94%A8scanf%E5%BF%BD%E7%95%A5%E8%BF%94%E5%9B%9E%E5%80%BC%E5%AF%BC%E8%87%B4%E6%8A%A5%E9%94%99/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">
+        
+          关于PTA中使用scanf()忽略返回值导致报错
+        
+      </div>
+    </a>
+  
+  
+    <a href="/uncategorized/%E5%85%B3%E4%BA%8E%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">上一篇</strong>
+      <div class="article-nav-title">
+        
+          关于静态博客的评论系统
+        
+      </div>
+    </a>
+  
+</nav>
+
+
+  
+</article>
+
+
+
+
+
+
+    </section>
+    <div class="mb-search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜索">
+    <input type="hidden" name="q" value="site:ss102.ren">
+    </form>
+</div>
+<footer id="footer">
+  <h1 class="footer-blog-title">
+    <a href="/">张宸 blog</a>
+  </h1>
+  <span class="copyright">
+    &copy; 2022 张宸<br>
+    Modify from <a href="http://sanographix.github.io/tumblr/apollo/" target="_blank">Apollo</a> theme, designed by <a href="http://www.sanographix.net/" target="_blank">SANOGRAPHIX.NET</a><br>
+    Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+  </span>
+</footer>
+
+    
+
+<script src="//cdn.staticfile.org/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+  </div>
+</body>
+</html>
