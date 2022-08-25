@@ -1,41 +1,40 @@
-const pageTemplateDom = document.querySelector('.page-template');
-const articleTocContainerDom = document.querySelector('.article-toc-container');
-const headerDom = document.querySelector('.header-wrapper');
-const menuBarDom = document.querySelector('.menu-bar');
-const windowMaskDom = document.querySelector('.window-mask');
-const scrollPercentDom = document.querySelector('.scroll-percent');
+KEEP.initHeaderShrink = () => {
+  KEEP.utils.headerShrink = {
+    headerDom: document.querySelector('.header-wrapper'),
+    isHeaderShrink: false,
 
-let isHeaderShrink = false;
-const headerHeight = headerDom.getBoundingClientRect().height;
+    init() {
+      this.headerHeight = this.headerDom.getBoundingClientRect().height;
+    },
 
-window.addEventListener('scroll', function (_e) {
-    const scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
-    if (!isHeaderShrink && scrollTop > headerHeight) {
-        isHeaderShrink = true;
-        headerDom.classList.add('header-wrapper-shrink');
-        pageTemplateDom.classList.add('page-top-shrink');
+    headerShrink() {
+      const scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
 
-        if (articleTocContainerDom) {
-            articleTocContainerDom.classList.add('article-toc-container-shrink');
-        }
-    } else if (isHeaderShrink && scrollTop <= headerHeight) {
-        isHeaderShrink = false;
-        headerDom.classList.remove('header-wrapper-shrink');
-        pageTemplateDom.classList.remove('page-top-shrink');
+      if (!this.isHeaderShrink && scrollTop > this.headerHeight) {
+        this.isHeaderShrink = true;
+        document.body.classList.add('header-shrink');
+      } else if (this.isHeaderShrink && scrollTop <= this.headerHeight) {
+        this.isHeaderShrink = false;
+        document.body.classList.remove('header-shrink');
+      }
 
-        if (articleTocContainerDom) {
-            articleTocContainerDom.classList.remove('article-toc-container-shrink');
-        }
+    },
+
+    toggleHeaderDrawerShow() {
+      const domList = [document.querySelector('.window-mask'), document.querySelector('.menu-bar')];
+
+      if (KEEP.theme_config.pjax.enable === true) {
+        domList.push(...document.querySelectorAll('.header-drawer .drawer-menu-list .drawer-menu-item'));
+      }
+
+      domList.forEach(v => {
+        v.addEventListener('click', () => {
+          document.body.classList.toggle('header-drawer-show');
+        });
+      });
     }
-});
-
-
-menuBarDom.addEventListener('click', function (_e) {
-    headerDom.classList.toggle('header-drawer-show');
-});
-
-windowMaskDom.addEventListener('click', function (_e) {
-    headerDom.classList.toggle('header-drawer-show');
-});
-
-
+  }
+  KEEP.utils.headerShrink.init();
+  KEEP.utils.headerShrink.headerShrink();
+  KEEP.utils.headerShrink.toggleHeaderDrawerShow();
+}

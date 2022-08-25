@@ -1,94 +1,105 @@
-window.addEventListener('DOMContentLoaded', () => {
+/* global KEEP */
+function initTOC() {
+  KEEP.utils.navItems = document.querySelectorAll('.post-toc-wrap .post-toc li');
 
-    const tocElement = document.querySelector('.post-toc-wrap');
+  if (KEEP.utils.navItems.length > 0) {
 
-    const navItems = tocElement.querySelectorAll('.post-toc li');
+    KEEP.utils = {
 
-    if (navItems.length > 0) {
+      ...KEEP.utils,
 
-        const sections = [...navItems].map(element => {
-            var link = element.querySelector('a.nav-link');
-            // TOC item animation navigate.
-            link.addEventListener('click', event => {
-                event.preventDefault();
-                var target = document.getElementById(event.currentTarget.getAttribute('href').replace('#', ''));
-                var offset = target.getBoundingClientRect().top + window.scrollY - 70;
-                window.anime({
-                    targets: document.scrollingElement,
-                    duration: 500,
-                    easing: 'linear',
-                    scrollTop: offset
-                });
-            });
-            return document.getElementById(link.getAttribute('href').replace('#', ''));
+      findActiveIndexByTOC() {
+        if (!Array.isArray(KEEP.utils.sections)) return;
+        let index = KEEP.utils.sections.findIndex(element => {
+          return element && element.getBoundingClientRect().top - 20 > 0;
         });
+        if (index === -1) {
+          index = KEEP.utils.sections.length - 1;
+        } else if (index > 0) {
+          index--;
+        }
+        this.activateNavByIndex(index);
+      },
 
-
-
-        function activateNavByIndex(target) {
-            if (target.classList.contains('active-current')) return;
-            document.querySelectorAll('.post-toc .active').forEach(element => {
-                element.classList.remove('active', 'active-current');
-            });
-            target.classList.add('active', 'active-current');
-            var parent = target.parentNode;
-            while (!parent.matches('.post-toc')) {
-                if (parent.matches('li')) parent.classList.add('active');
-                parent = parent.parentNode;
-            }
-            // Scrolling to center active TOC element if TOC content is taller then viewport.
+      registerSidebarTOC() {
+        KEEP.utils.sections = [...document.querySelectorAll('.post-toc li a.nav-link')].map(element => {
+          const target = document.getElementById(decodeURI(element.getAttribute('href')).replace('#', ''));
+          element.addEventListener('click', event => {
+            event.preventDefault();
+            const offset = target.getBoundingClientRect().top + window.scrollY;
             window.anime({
-                targets: tocElement,
-                duration: 200,
-                easing: 'linear',
-                scrollTop: tocElement.scrollTop - (tocElement.offsetHeight / 2) + target.getBoundingClientRect().top - tocElement.getBoundingClientRect().top
+              targets: document.scrollingElement,
+              duration: 500,
+              easing: 'linear',
+              scrollTop: offset - 10,
+              complete: function () {
+                setTimeout(() => {
+                  KEEP.utils.pageTop_dom.classList.add('hide');
+                }, 100)
+              }
             });
+          });
+          return target;
+        });
+      },
+
+      activateNavByIndex(index) {
+        const target = document.querySelectorAll('.post-toc li a.nav-link')[index];
+        if (!target || target.classList.contains('active-current')) return;
+
+        document.querySelectorAll('.post-toc .active').forEach(element => {
+          element.classList.remove('active', 'active-current');
+        });
+        target.classList.add('active', 'active-current');
+        let parent = target.parentNode;
+        while (!parent.matches('.post-toc')) {
+          if (parent.matches('li')) parent.classList.add('active');
+          parent = parent.parentNode;
+        }
+        // Scrolling to center active TOC element if TOC content is taller then viewport.
+        const tocElement = document.querySelector('.post-toc-wrap');
+        window.anime({
+          targets: tocElement,
+          duration: 200,
+          easing: 'linear',
+          scrollTop: tocElement.scrollTop - (tocElement.offsetHeight / 2) + target.getBoundingClientRect().top - tocElement.getBoundingClientRect().top
+        });
+      },
+
+      showPageAsideWhenHasTOC() {
+
+        const openHandle = () => {
+          const styleStatus = KEEP.getStyleStatus();
+          const key = 'isOpenPageAside';
+          if (styleStatus && styleStatus.hasOwnProperty(key)) {
+            KEEP.utils.leftSideToggle.pageAsideHandleOfTOC(styleStatus[key]);
+          } else {
+            KEEP.utils.leftSideToggle.pageAsideHandleOfTOC(true);
+          }
         }
 
-        function findIndex(entries) {
-            let index = 0;
-            let entry = entries[index];
-            if (entry.boundingClientRect.top > 0) {
-                index = sections.indexOf(entry.target);
-                return index === 0 ? 0 : index - 1;
-            }
-            for (; index < entries.length; index++) {
-                if (entries[index].boundingClientRect.top <= 0) {
-                    entry = entries[index];
-                } else {
-                    return sections.indexOf(entry.target);
-                }
-            }
-            return sections.indexOf(entry.target);
+        const initOpenKey = 'init_open';
+
+        if (KEEP.theme_config.toc.hasOwnProperty(initOpenKey)) {
+          KEEP.theme_config.toc[initOpenKey] ? openHandle() : KEEP.utils.leftSideToggle.pageAsideHandleOfTOC(false);
+
+        } else {
+          openHandle();
         }
 
-        function createIntersectionObserver(marginTop) {
-
-            marginTop = Math.floor(marginTop + 10000);
-            let intersectionObserver = new IntersectionObserver((entries, observe) => {
-                let scrollHeight = document.documentElement.scrollHeight + 100;
-                if (scrollHeight > marginTop) {
-                    observe.disconnect();
-                    createIntersectionObserver(scrollHeight);
-                    return;
-                }
-                let index = findIndex(entries);
-                activateNavByIndex(navItems[index]);
-            }, {
-                rootMargin: marginTop + 'px 0px -100% 0px',
-                threshold: 0
-            });
-            sections.forEach(element => {
-                element && intersectionObserver.observe(element);
-            });
-        }
-
-        createIntersectionObserver(document.documentElement.scrollHeight);
-
-    } else {
-        tocElement.innerHTML = '';
+      }
     }
 
+    KEEP.utils.showPageAsideWhenHasTOC();
+    KEEP.utils.registerSidebarTOC();
 
-});
+  } else {
+    KEEP.utils.pageContainer_dom.removeChild(document.querySelector('.page-aside'));
+  }
+}
 
+if (KEEP.theme_config.pjax.enable === true && KEEP.utils) {
+  initTOC();
+} else {
+  window.addEventListener('DOMContentLoaded', initTOC);
+}
