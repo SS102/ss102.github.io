@@ -69,87 +69,6 @@
       </tags>
   </entry>
   <entry>
-    <title>关于静态博客的评论系统</title>
-    <url>/2020/05/10/%E5%85%B3%E4%BA%8E%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/</url>
-    <content><![CDATA[<blockquote>
-<ul>
-<li><p>基于第三方：Disqus&#x2F;Livere（来必力）&#x2F;Valine</p>
-</li>
-<li><p>基于Github issue：Gitment&#x2F;Gitalk&#x2F;utterances&#x2F;Vssue</p>
-</li>
-<li><p>纯静态：Staticman</p>
-</li>
-<li><p>自建：ISSO&#x2F;HashOver</p>
-</li>
-</ul>
-</blockquote>
-<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>博客系统众多，WordPress，Emlog，Typecho等等，都有自带的评论系统，而静态博客系统 诸如 Hexo，Jekyll，Hugo等，都没有自带的评论系统，于是第三方评论系统就兴起了。这里只列举部分。</p>
-<span id="more"></span>
-
-<h3 id="基于第三方"><a href="#基于第三方" class="headerlink" title="基于第三方"></a>基于第三方</h3><h4 id="Disqus"><a href="#Disqus" class="headerlink" title="Disqus"></a>Disqus</h4><figure class="highlight http"><table><tr><td class="code"><pre><span class="line">https://disqus.com</span><br></pre></td></tr></table></figure>
-
-<p>大陆已无法使用。</p>
-<h4 id="Livere（来必力）"><a href="#Livere（来必力）" class="headerlink" title="Livere（来必力）"></a>Livere（来必力）</h4><figure class="highlight http"><table><tr><td class="code"><pre><span class="line">https://livere.com</span><br></pre></td></tr></table></figure>
-
-<p>韩国的一家评论系统，支持中文，使用邮箱注册。支持国内多家社交平台登录，颜值很高。</p>
-<p><img src="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/22.jpg"></p>
-<h4 id="Valine"><a href="#Valine" class="headerlink" title="Valine"></a>Valine</h4><figure class="highlight http"><table><tr><td class="code"><pre><span class="line">https://valine.js.org/</span><br></pre></td></tr></table></figure>
-
-<p>一款基于LeanCloud的快速、简洁且高效的无后端评论系统。</p>
-<p>可以安装拓展插件 进行评论回复邮件的通知 <a class="link"   href="https://github.com/zhaojun1998/Valine-Admin" >Valine-Admin<i class="fas fa-external-link-alt"></i></a></p>
-<h3 id="基于Github-issue"><a href="#基于Github-issue" class="headerlink" title="基于Github issue"></a>基于Github issue</h3><h4 id="Gitment"><a href="#Gitment" class="headerlink" title="Gitment"></a>Gitment</h4><figure class="highlight http"><table><tr><td class="code"><pre><span class="line">https://github.com/imsun/gitment</span><br></pre></td></tr></table></figure>
-
-<p>中文介绍：<a class="link"   href="https://imsun.net/posts/gitment-introduction/" >Gitment<i class="fas fa-external-link-alt"></i></a> 优点就不说了。</p>
-<p>缺点：只支持GitHub登录，长期未维护。</p>
-<h4 id="Gitalk"><a href="#Gitalk" class="headerlink" title="Gitalk"></a>Gitalk</h4><figure class="highlight http"><table><tr><td class="code"><pre><span class="line">https://gitalk.github.io</span><br></pre></td></tr></table></figure>
-
-<p>一个基于 Github Issue 和 Preact 开发的评论插件。</p>
-<p>和Gitment类似 <a class="link"   href="https://github.com/gitalk/gitalk#install" >安装使用<i class="fas fa-external-link-alt"></i></a> </p>
-<h4 id="utterances"><a href="#utterances" class="headerlink" title="utterances"></a>utterances</h4><figure class="highlight http"><table><tr><td class="code"><pre><span class="line">https://github.com/utterance/utterances</span><br></pre></td></tr></table></figure>
-
-<p>官方介绍：</p>
-<blockquote>
-<p>一个基于GitHub issue的轻量级评论小部件。</p>
-</blockquote>
-<p><a class="link"   href="https://utteranc.es/" >官网<i class="fas fa-external-link-alt"></i></a></p>
-<h4 id="Vssue"><a href="#Vssue" class="headerlink" title="Vssue"></a>Vssue</h4><figure class="highlight http"><table><tr><td class="code"><pre><span class="line">https://vssue.js.org/</span><br></pre></td></tr></table></figure>
-
-<p>Vssue 是一个 Vue 组件 &#x2F; 插件，可以为你的静态页面开启评论功能。</p>
-<p>Vssue 名字的由来：由 Vue 驱动并基于 Issue 实现。</p>
-<h5 id="vssue与类似项目比较"><a href="#vssue与类似项目比较" class="headerlink" title="vssue与类似项目比较"></a>vssue与类似项目比较</h5><p><strong>Vssue</strong> 的灵感来自于 <a href="https://github.com/imsun/gitment"><strong>Gitment</strong></a> 和 <a href="https://github.com/gitalk/gitalk"><strong>Gitalk</strong></a>，但是和它们有些区别：</p>
-<ul>
-<li><strong>Vssue</strong> 支持 Github, Gitlab, Bitbucket, Gitee 和 Gitea，并且很容易扩展到其它平台。<strong>Gitment</strong> 和 <strong>Gitalk</strong> 仅支持 Github。</li>
-<li><strong>Vssue</strong> 可以发表、编辑、删除评论。<strong>Gitment</strong> 和 <strong>Gitalk</strong> 仅能发表评论。</li>
-<li><strong>Vssue</strong> 是基于 <a class="link"   href="https://vuejs.org/" >Vue.js<i class="fas fa-external-link-alt"></i></a> 开发的，可以集成到 Vue 项目中，并且提供了一个 <a class="link"   href="https://vssue.js.org/zh/guide/vuepress.html" >VuePress 插件<i class="fas fa-external-link-alt"></i></a>。 <strong>Gitment</strong> 基于原生JS，而 <strong>Gitalk</strong> 基于 <a class="link"   href="https://github.com/developit/preact" >Preact<i class="fas fa-external-link-alt"></i></a>。</li>
-</ul>
-<h3 id="纯静态"><a href="#纯静态" class="headerlink" title="纯静态"></a>纯静态</h3><h4 id="Staticman"><a href="#Staticman" class="headerlink" title="Staticman"></a>Staticman</h4><figure class="highlight http"><table><tr><td class="code"><pre><span class="line">https://staticman.net</span><br></pre></td></tr></table></figure>
-
-<p>顾名思义 纯静态评论系统 指用户进行评论生成内容等操作时，将输入内容与其余内容一起重新生成并上传到GitHub repo中。<a class="link"   href="http://popcorn.staticman.net/" >演示页面<i class="fas fa-external-link-alt"></i></a></p>
-<h3 id="自建评论系统"><a href="#自建评论系统" class="headerlink" title="自建评论系统"></a>自建评论系统</h3><h4 id="ISSO"><a href="#ISSO" class="headerlink" title="ISSO"></a>ISSO</h4><figure class="highlight http"><table><tr><td class="code"><pre><span class="line">https://posativ.org/isso</span><br></pre></td></tr></table></figure>
-
-<p>官方介绍：</p>
-<blockquote>
-<p>与Disqus类似的评论系统</p>
-</blockquote>
-<p>用户可以编辑或删除自己的评论（默认为15分钟内），支持Markdown撰写，轻松迁移自己的Disqus &#x2F; WordPress评论。</p>
-<h4 id="HashOver"><a href="#HashOver" class="headerlink" title="HashOver"></a>HashOver</h4><figure class="highlight http"><table><tr><td class="code"><pre><span class="line">https://www.barkdull.org/software/hashover</span><br></pre></td></tr></table></figure>
-
-<p>官方介绍：</p>
-<blockquote>
-<p>一个免费开源的PHP评论系统，允许完全匿名的评论和简单的主题化。旨在替代Disqus等专有服务。</p>
-</blockquote>
-<p>特色功能前往<a class="link"   href="https://www.barkdull.org/software/hashover" >官网<i class="fas fa-external-link-alt"></i></a>查看</p>
-<hr>
-<p>本博客目前使用的评论系统是Vssue，后期可能会考虑更换 。</p>
-<h3 id="参考网站"><a href="#参考网站" class="headerlink" title="参考网站"></a>参考网站</h3><ol>
-<li><a class="link"   href="https://blog.shuiba.co/comment-systems-recommendation" >第三方评论系统推荐 - 水八口记<i class="fas fa-external-link-alt"></i></a></li>
-</ol>
-]]></content>
-      <tags>
-        <tag>Comments</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>关于PTA中使用scanf()忽略返回值导致报错</title>
     <url>/2020/06/03/%E5%85%B3%E4%BA%8EPTA%E4%B8%AD%E4%BD%BF%E7%94%A8scanf%E5%BF%BD%E7%95%A5%E8%BF%94%E5%9B%9E%E5%80%BC%E5%AF%BC%E8%87%B4%E6%8A%A5%E9%94%99/</url>
     <content><![CDATA[<p>代码：</p>
@@ -185,6 +104,25 @@
       <tags>
         <tag>PTA</tag>
         <tag>C语言</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>河南省13-19年对口升学各专业考试试卷下载</title>
+    <url>/2020/06/06/%E6%B2%B3%E5%8D%97%E7%9C%8113-19%E5%B9%B4%E5%AF%B9%E5%8F%A3%E5%8D%87%E5%AD%A6%E5%90%84%E4%B8%93%E4%B8%9A%E8%80%83%E8%AF%95%E8%AF%95%E5%8D%B7%E4%B8%8B%E8%BD%BD/</url>
+    <content><![CDATA[<p>河南省2013-2019年中职生对口升学各专业考试试卷下载</p>
+<span id="more"></span>
+
+<p>目录</p>
+<p><img src="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/20200606013323.png"></p>
+<p>2013-2018年历年真题试卷来自 <a class="link"   href="http://www.vae.ha.cn/" >河南省职成教网<i class="fas fa-external-link-alt"></i></a></p>
+<p>因河南省职成教网目前为止还未公布2019年试卷下载</p>
+<p>所以目录里的2019年语文数学英语试卷来自 互联网。</p>
+<p>附件- <a class="link"   href="https://lanzous.com/izWe4ddoxkd" >河南省2013-2019对口升学历年真题.zip<i class="fas fa-external-link-alt"></i></a></p>
+<p>备用下载：</p>
+<p>链接: <a class="link"   href="https://pan.baidu.com/s/14LJCa2JRmuTRzE-1TfW70w" >https://pan.baidu.com/s/14LJCa2JRmuTRzE-1TfW70w<i class="fas fa-external-link-alt"></i></a> 提取码: sy3b</p>
+]]></content>
+      <tags>
+        <tag>历年试卷</tag>
       </tags>
   </entry>
   <entry>
@@ -354,22 +292,84 @@
       </tags>
   </entry>
   <entry>
-    <title>河南省13-19年对口升学各专业考试试卷下载</title>
-    <url>/2020/06/06/%E6%B2%B3%E5%8D%97%E7%9C%8113-19%E5%B9%B4%E5%AF%B9%E5%8F%A3%E5%8D%87%E5%AD%A6%E5%90%84%E4%B8%93%E4%B8%9A%E8%80%83%E8%AF%95%E8%AF%95%E5%8D%B7%E4%B8%8B%E8%BD%BD/</url>
-    <content><![CDATA[<p>河南省2013-2019年中职生对口升学各专业考试试卷下载</p>
+    <title>关于静态博客的评论系统</title>
+    <url>/2020/05/10/%E5%85%B3%E4%BA%8E%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/</url>
+    <content><![CDATA[<blockquote>
+<ul>
+<li><p>基于第三方：Disqus&#x2F;Livere（来必力）&#x2F;Valine</p>
+</li>
+<li><p>基于Github issue：Gitment&#x2F;Gitalk&#x2F;utterances&#x2F;Vssue</p>
+</li>
+<li><p>纯静态：Staticman</p>
+</li>
+<li><p>自建：ISSO&#x2F;HashOver</p>
+</li>
+</ul>
+</blockquote>
+<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>博客系统众多，WordPress，Emlog，Typecho等等，都有自带的评论系统，而静态博客系统 诸如 Hexo，Jekyll，Hugo等，都没有自带的评论系统，于是第三方评论系统就兴起了。这里只列举部分。</p>
 <span id="more"></span>
 
-<p>目录</p>
-<p><img src="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/20200606013323.png"></p>
-<p>2013-2018年历年真题试卷来自 <a class="link"   href="http://www.vae.ha.cn/" >河南省职成教网<i class="fas fa-external-link-alt"></i></a></p>
-<p>因河南省职成教网目前为止还未公布2019年试卷下载</p>
-<p>所以目录里的2019年语文数学英语试卷来自 互联网。</p>
-<p>附件- <a class="link"   href="https://lanzous.com/izWe4ddoxkd" >河南省2013-2019对口升学历年真题.zip<i class="fas fa-external-link-alt"></i></a></p>
-<p>备用下载：</p>
-<p>链接: <a class="link"   href="https://pan.baidu.com/s/14LJCa2JRmuTRzE-1TfW70w" >https://pan.baidu.com/s/14LJCa2JRmuTRzE-1TfW70w<i class="fas fa-external-link-alt"></i></a> 提取码: sy3b</p>
+<h3 id="基于第三方"><a href="#基于第三方" class="headerlink" title="基于第三方"></a>基于第三方</h3><h4 id="Disqus"><a href="#Disqus" class="headerlink" title="Disqus"></a>Disqus</h4><figure class="highlight http"><table><tr><td class="code"><pre><span class="line">https://disqus.com</span><br></pre></td></tr></table></figure>
+
+<p>大陆已无法使用。</p>
+<h4 id="Livere（来必力）"><a href="#Livere（来必力）" class="headerlink" title="Livere（来必力）"></a>Livere（来必力）</h4><figure class="highlight http"><table><tr><td class="code"><pre><span class="line">https://livere.com</span><br></pre></td></tr></table></figure>
+
+<p>韩国的一家评论系统，支持中文，使用邮箱注册。支持国内多家社交平台登录，颜值很高。</p>
+<p><img src="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/22.jpg"></p>
+<h4 id="Valine"><a href="#Valine" class="headerlink" title="Valine"></a>Valine</h4><figure class="highlight http"><table><tr><td class="code"><pre><span class="line">https://valine.js.org/</span><br></pre></td></tr></table></figure>
+
+<p>一款基于LeanCloud的快速、简洁且高效的无后端评论系统。</p>
+<p>可以安装拓展插件 进行评论回复邮件的通知 <a class="link"   href="https://github.com/zhaojun1998/Valine-Admin" >Valine-Admin<i class="fas fa-external-link-alt"></i></a></p>
+<h3 id="基于Github-issue"><a href="#基于Github-issue" class="headerlink" title="基于Github issue"></a>基于Github issue</h3><h4 id="Gitment"><a href="#Gitment" class="headerlink" title="Gitment"></a>Gitment</h4><figure class="highlight http"><table><tr><td class="code"><pre><span class="line">https://github.com/imsun/gitment</span><br></pre></td></tr></table></figure>
+
+<p>中文介绍：<a class="link"   href="https://imsun.net/posts/gitment-introduction/" >Gitment<i class="fas fa-external-link-alt"></i></a> 优点就不说了。</p>
+<p>缺点：只支持GitHub登录，长期未维护。</p>
+<h4 id="Gitalk"><a href="#Gitalk" class="headerlink" title="Gitalk"></a>Gitalk</h4><figure class="highlight http"><table><tr><td class="code"><pre><span class="line">https://gitalk.github.io</span><br></pre></td></tr></table></figure>
+
+<p>一个基于 Github Issue 和 Preact 开发的评论插件。</p>
+<p>和Gitment类似 <a class="link"   href="https://github.com/gitalk/gitalk#install" >安装使用<i class="fas fa-external-link-alt"></i></a> </p>
+<h4 id="utterances"><a href="#utterances" class="headerlink" title="utterances"></a>utterances</h4><figure class="highlight http"><table><tr><td class="code"><pre><span class="line">https://github.com/utterance/utterances</span><br></pre></td></tr></table></figure>
+
+<p>官方介绍：</p>
+<blockquote>
+<p>一个基于GitHub issue的轻量级评论小部件。</p>
+</blockquote>
+<p><a class="link"   href="https://utteranc.es/" >官网<i class="fas fa-external-link-alt"></i></a></p>
+<h4 id="Vssue"><a href="#Vssue" class="headerlink" title="Vssue"></a>Vssue</h4><figure class="highlight http"><table><tr><td class="code"><pre><span class="line">https://vssue.js.org/</span><br></pre></td></tr></table></figure>
+
+<p>Vssue 是一个 Vue 组件 &#x2F; 插件，可以为你的静态页面开启评论功能。</p>
+<p>Vssue 名字的由来：由 Vue 驱动并基于 Issue 实现。</p>
+<h5 id="vssue与类似项目比较"><a href="#vssue与类似项目比较" class="headerlink" title="vssue与类似项目比较"></a>vssue与类似项目比较</h5><p><strong>Vssue</strong> 的灵感来自于 <a href="https://github.com/imsun/gitment"><strong>Gitment</strong></a> 和 <a href="https://github.com/gitalk/gitalk"><strong>Gitalk</strong></a>，但是和它们有些区别：</p>
+<ul>
+<li><strong>Vssue</strong> 支持 Github, Gitlab, Bitbucket, Gitee 和 Gitea，并且很容易扩展到其它平台。<strong>Gitment</strong> 和 <strong>Gitalk</strong> 仅支持 Github。</li>
+<li><strong>Vssue</strong> 可以发表、编辑、删除评论。<strong>Gitment</strong> 和 <strong>Gitalk</strong> 仅能发表评论。</li>
+<li><strong>Vssue</strong> 是基于 <a class="link"   href="https://vuejs.org/" >Vue.js<i class="fas fa-external-link-alt"></i></a> 开发的，可以集成到 Vue 项目中，并且提供了一个 <a class="link"   href="https://vssue.js.org/zh/guide/vuepress.html" >VuePress 插件<i class="fas fa-external-link-alt"></i></a>。 <strong>Gitment</strong> 基于原生JS，而 <strong>Gitalk</strong> 基于 <a class="link"   href="https://github.com/developit/preact" >Preact<i class="fas fa-external-link-alt"></i></a>。</li>
+</ul>
+<h3 id="纯静态"><a href="#纯静态" class="headerlink" title="纯静态"></a>纯静态</h3><h4 id="Staticman"><a href="#Staticman" class="headerlink" title="Staticman"></a>Staticman</h4><figure class="highlight http"><table><tr><td class="code"><pre><span class="line">https://staticman.net</span><br></pre></td></tr></table></figure>
+
+<p>顾名思义 纯静态评论系统 指用户进行评论生成内容等操作时，将输入内容与其余内容一起重新生成并上传到GitHub repo中。<a class="link"   href="http://popcorn.staticman.net/" >演示页面<i class="fas fa-external-link-alt"></i></a></p>
+<h3 id="自建评论系统"><a href="#自建评论系统" class="headerlink" title="自建评论系统"></a>自建评论系统</h3><h4 id="ISSO"><a href="#ISSO" class="headerlink" title="ISSO"></a>ISSO</h4><figure class="highlight http"><table><tr><td class="code"><pre><span class="line">https://posativ.org/isso</span><br></pre></td></tr></table></figure>
+
+<p>官方介绍：</p>
+<blockquote>
+<p>与Disqus类似的评论系统</p>
+</blockquote>
+<p>用户可以编辑或删除自己的评论（默认为15分钟内），支持Markdown撰写，轻松迁移自己的Disqus &#x2F; WordPress评论。</p>
+<h4 id="HashOver"><a href="#HashOver" class="headerlink" title="HashOver"></a>HashOver</h4><figure class="highlight http"><table><tr><td class="code"><pre><span class="line">https://www.barkdull.org/software/hashover</span><br></pre></td></tr></table></figure>
+
+<p>官方介绍：</p>
+<blockquote>
+<p>一个免费开源的PHP评论系统，允许完全匿名的评论和简单的主题化。旨在替代Disqus等专有服务。</p>
+</blockquote>
+<p>特色功能前往<a class="link"   href="https://www.barkdull.org/software/hashover" >官网<i class="fas fa-external-link-alt"></i></a>查看</p>
+<hr>
+<p>本博客目前使用的评论系统是Vssue，后期可能会考虑更换 。</p>
+<h3 id="参考网站"><a href="#参考网站" class="headerlink" title="参考网站"></a>参考网站</h3><ol>
+<li><a class="link"   href="https://blog.shuiba.co/comment-systems-recommendation" >第三方评论系统推荐 - 水八口记<i class="fas fa-external-link-alt"></i></a></li>
+</ol>
 ]]></content>
       <tags>
-        <tag>历年试卷</tag>
+        <tag>Comments</tag>
       </tags>
   </entry>
 </search>
