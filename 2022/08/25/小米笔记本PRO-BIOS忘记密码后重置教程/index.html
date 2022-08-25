@@ -1,108 +1,132 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-  <meta charset="utf-8">
-  
-  <title>小米笔记本PRO BIOS忘记密码后重置教程 | 张宸 blog</title>
-  <meta name="viewport" content="width=device-width">
-  <meta name="description" content="小米笔记本PRO BIOS忘记密码后重置教程问题如下：   前言电脑型号：小米笔记本Pro 15.6寸，显卡MX150 8代i5 8GB内存 TM1701 原BIOS 版本&#x2F;日期	INSYDE Corp. XMAKB5R0P0A07, 2018&#x2F;12&#x2F;07 其他型号电脑请谨慎尝试。">
-<meta property="og:type" content="article">
-<meta property="og:title" content="小米笔记本PRO BIOS忘记密码后重置教程">
-<meta property="og:url" content="https://ss102.ren/2022/08/25/%E5%B0%8F%E7%B1%B3%E7%AC%94%E8%AE%B0%E6%9C%ACPRO-BIOS%E5%BF%98%E8%AE%B0%E5%AF%86%E7%A0%81%E5%90%8E%E9%87%8D%E7%BD%AE%E6%95%99%E7%A8%8B/index.html">
-<meta property="og:site_name" content="张宸 blog">
-<meta property="og:description" content="小米笔记本PRO BIOS忘记密码后重置教程问题如下：   前言电脑型号：小米笔记本Pro 15.6寸，显卡MX150 8代i5 8GB内存 TM1701 原BIOS 版本&#x2F;日期	INSYDE Corp. XMAKB5R0P0A07, 2018&#x2F;12&#x2F;07 其他型号电脑请谨慎尝试。">
-<meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/202208251324264.png">
-<meta property="og:image" content="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/5ed8d28d6906900159be5945211d7cb.jpg">
-<meta property="og:image" content="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/202208251242069.png">
-<meta property="og:image" content="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/202208251243627.jpg">
-<meta property="og:image" content="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/202208251244715.jpg">
-<meta property="og:image" content="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/202208251245804.jpg">
-<meta property="og:image" content="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/202208251245739.jpg">
-<meta property="og:image" content="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/202208251246208.jpg">
-<meta property="og:image" content="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/202208251246610.jpg">
-<meta property="og:image" content="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/202208251247432.jpg">
-<meta property="og:image" content="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/202208251247164.jpg">
-<meta property="og:image" content="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/202208251248013.jpg">
-<meta property="og:image" content="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/202208251248788.png">
-<meta property="og:image" content="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/202208251250684.png">
-<meta property="og:image" content="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/202208251250852.png">
-<meta property="og:image" content="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/202208251251605.png">
-<meta property="og:image" content="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/202208251251693.png">
-<meta property="og:image" content="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/202208251251748.jpg">
-<meta property="article:published_time" content="2022-08-25T07:28:37.000Z">
-<meta property="article:modified_time" content="2022-08-25T15:20:21.430Z">
-<meta property="article:author" content="张宸">
-<meta property="article:tag" content="小米笔记本Pro">
-<meta property="article:tag" content="BIOS密码忘记">
-<meta property="article:tag" content="编程器烧录工具">
-<meta property="article:tag" content="CH341A">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/202208251324264.png">
-  
-    <link rel="alternative" href="/atom.xml" title="张宸 blog" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
+    <meta charset="utf-8">
+    
+    <title>
+        小米笔记本PRO BIOS忘记密码后重置教程 | 张宸 blog
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+        <link rel="shortcut icon" href="/images/favicon.png">
+    
+    
 <link rel="stylesheet" href="/css/style.css">
 
-  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-  
-
+    <script id="hexo-configurations">
+    let CONFIG = {"hostname":"ss102.ren","root":"/","localsearch":{"enable":true,"trigger":"auto","unescape":false,"preload":false},"themeInfo":{"name":"ILS","version":"1.1.0","author":"XPoet","repository":"https://github.com/XPoet/hexo-theme-ils"},"path":"search.json"};
+  </script>
 <meta name="generator" content="Hexo 6.2.0"></head>
 
+
 <body>
-  <div id="container">
-    <div class="mobile-nav-panel">
-  <i class="icon-reorder icon-large"></i>
-</div>
-<header id="header">
-  <h1 class="blog-title">
-    <a href="/">张宸 blog</a>
-  </h1>
-  <nav class="nav">
-    <ul>
-      <li><a href="/">主页</a></li><li><a href="/archives">存档</a></li>
-      <li><a id="nav-search-btn" class="nav-icon" title="搜索"></a></li>
-      <li><a href="/atom.xml" id="nav-rss-link" class="nav-icon" title="RSS 订阅"></a></li>
-    </ul>
-  </nav>
-  <div id="search-form-wrap">
-    <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://ss102.ren"></form>
-  </div>
+<div class="page-template">
+    <div class="page-top">
+        <header class="header-wrapper">
+
+    <div class="header-content">
+
+        <a class="logo-title" href="/">
+            张宸 blog
+        </a>
+
+        <ul class="menu-list">
+            
+                <li class="menu-item">
+                    <a class=""
+                       href="/"
+                    >
+                        首页
+                    </a>
+                </li>
+            
+                <li class="menu-item">
+                    <a class=""
+                       href="/archives"
+                    >
+                        归档
+                    </a>
+                </li>
+            
+        </ul>
+
+        <div class="menu-bar">
+            <div class="menu-bar-middle"></div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item">
+                    <a class=""
+                       href="/">首页</a>
+                </li>
+            
+                <li class="drawer-menu-item">
+                    <a class=""
+                       href="/archives">归档</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
 </header>
 
-    <section id="main">
-      <article id="post-小米笔记本PRO-BIOS忘记密码后重置教程" class="post">
-  <header class="entry-meta-header">
-    <span class="meta-elements date">
-      <a href="/2022/08/25/%E5%B0%8F%E7%B1%B3%E7%AC%94%E8%AE%B0%E6%9C%ACPRO-BIOS%E5%BF%98%E8%AE%B0%E5%AF%86%E7%A0%81%E5%90%8E%E9%87%8D%E7%BD%AE%E6%95%99%E7%A8%8B/" class="article-date">
-  <time datetime="2022-08-25T07:28:37.000Z" itemprop="datePublished">2022-08-25</time>
-</a>
 
-    </span>
-    <span class="meta-elements author">张宸</span>
-    <div class="commentscount">
-      
     </div>
-  </header>
-  
 
-  <header class="entry-header">
+    <div class="page-middle ">
+
+        <main class="main-content normal-code-theme">
+
+            <div class="main-content-left">
+                
+                    <div class="fade-in-down-animation">
+    <div class="article-content-container">
+
+        <div class="article-title">
+            <h3><a class="title-hover-animation">小米笔记本PRO BIOS忘记密码后重置教程</a></h3>
+        </div>
+
+        <div class="meta-info">
+            <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa fa-calendar-o"></i> 2022-08-25 15:28:37
+    </span>
     
-  
-    <h1 class="article-title entry-title" itemprop="name">
-      小米笔记本PRO BIOS忘记密码后重置教程
-    </h1>
-  
-
-
-  </header>
-  <div class="entry-content">
     
-      <h3 id="小米笔记本PRO-BIOS忘记密码后重置教程"><a href="#小米笔记本PRO-BIOS忘记密码后重置教程" class="headerlink" title="小米笔记本PRO BIOS忘记密码后重置教程"></a>小米笔记本PRO BIOS忘记密码后重置教程</h3><p>问题如下：</p>
+        <span class="article-tags article-meta-item">
+            <i class="fa fa-tags"></i>
+            <ul>
+                
+                    <li>
+                        <a href="/tags/%E5%B0%8F%E7%B1%B3%E7%AC%94%E8%AE%B0%E6%9C%ACPro/">小米笔记本Pro</a>
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/BIOS%E5%AF%86%E7%A0%81%E5%BF%98%E8%AE%B0/">BIOS密码忘记</a>
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/%E7%BC%96%E7%A8%8B%E5%99%A8%E7%83%A7%E5%BD%95%E5%B7%A5%E5%85%B7/">编程器烧录工具</a>
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/CH341A/">CH341A</a>
+                    </li>
+                
+            </ul>
+        </span>
+    
+    
+</div>
+        </div>
+
+        <div class="article-content markdown-body">
+            <h3 id="小米笔记本PRO-BIOS忘记密码后重置教程"><a href="#小米笔记本PRO-BIOS忘记密码后重置教程" class="headerlink" title="小米笔记本PRO BIOS忘记密码后重置教程"></a>小米笔记本PRO BIOS忘记密码后重置教程</h3><p>问题如下：</p>
 <img src="https://rw0-1257183060.cos.ap-chengdu.myqcloud.com/blog-img/202208251324264.png" style="zoom:50%;" />
 
 <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>电脑型号：小米笔记本Pro 15.6寸，显卡MX150 8代i5 8GB内存 TM1701</p>
@@ -258,82 +282,150 @@
 <p>知乎专栏：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/557485017">https://zhuanlan.zhihu.com/p/557485017</a></p>
 <p>哔哩哔哩专栏：<a target="_blank" rel="noopener" href="https://www.bilibili.com/read/cv18281656">https://www.bilibili.com/read/cv18281656</a></p>
 
+        </div>
+
+        <div class="article-nav">
+            
+            
+                <div class="article-next">
+                    <a class="next btn" rel="next"
+                       href="/2020/10/23/EasyRecovery-%E6%96%87%E4%BB%B6%E6%95%B0%E6%8D%AE%E6%81%A2%E5%A4%8D%E8%BD%AF%E4%BB%B6/">EasyRecovery-文件数据恢复软件 <i class="fa fa-chevron-right"></i>
+                    </a>
+                </div>
+            
+        </div>
+
+        <div class="comment-container">
+            <div class="comments-container">
     
-  </div>
-  <footer class="entry-footer">
-    <div class="entry-meta-footer">
-      <span class="category">
-        
-
-      </span>
-      <span class="tags">
-        
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/BIOS%E5%AF%86%E7%A0%81%E5%BF%98%E8%AE%B0/" rel="tag">BIOS密码忘记</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CH341A/" rel="tag">CH341A</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%B0%8F%E7%B1%B3%E7%AC%94%E8%AE%B0%E6%9C%ACPro/" rel="tag">小米笔记本Pro</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%BC%96%E7%A8%8B%E5%99%A8%E7%83%A7%E5%BD%95%E5%B7%A5%E5%85%B7/" rel="tag">编程器烧录工具</a></li></ul>
-
-
-      </span>
-    </div>
-  </footer>
-  
-    
-<nav id="article-nav">
-  
-  
-    <a href="/2020/10/23/EasyRecovery-%E6%96%87%E4%BB%B6%E6%95%B0%E6%8D%AE%E6%81%A2%E5%A4%8D%E8%BD%AF%E4%BB%B6/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">上一篇</strong>
-      <div class="article-nav-title">
-        
-          EasyRecovery-文件数据恢复软件
-        
-      </div>
-    </a>
-  
-</nav>
-
-
-  
-</article>
-
-
-
-
-
-
-    </section>
-    <div class="mb-search">
-  <form action="//google.com/search" method="get" accept-charset="utf-8">
-    <input type="search" name="q" results="0" placeholder="搜索">
-    <input type="hidden" name="q" value="site:ss102.ren">
-    </form>
 </div>
-<footer id="footer">
-  <h1 class="footer-blog-title">
-    <a href="/">张宸 blog</a>
-  </h1>
-  <span class="copyright">
-    &copy; 2022 张宸<br>
-    Modify from <a href="http://sanographix.github.io/tumblr/apollo/" target="_blank">Apollo</a> theme, designed by <a href="http://www.sanographix.net/" target="_blank">SANOGRAPHIX.NET</a><br>
-    Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-  </span>
+        </div>
+    </div>
+</div>
+
+    <div class="article-toc-container fade-in-down-animation">
+        <div class="article-toc">
+            <div class="post-toc-wrap">
+    <div class="post-toc">
+        <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B0%8F%E7%B1%B3%E7%AC%94%E8%AE%B0%E6%9C%ACPRO-BIOS%E5%BF%98%E8%AE%B0%E5%AF%86%E7%A0%81%E5%90%8E%E9%87%8D%E7%BD%AE%E6%95%99%E7%A8%8B"><span class="nav-number">1.</span> <span class="nav-text">小米笔记本PRO BIOS忘记密码后重置教程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">2.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%B5%B7%E5%9B%A0"><span class="nav-number">3.</span> <span class="nav-text">起因</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%87%86%E5%A4%87%E5%B7%A5%E5%85%B7"><span class="nav-number">4.</span> <span class="nav-text">准备工具</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%9C%80%E8%A6%81%E4%B8%8B%E8%BD%BD%E7%9A%84%E8%BD%AF%E4%BB%B6"><span class="nav-number">5.</span> <span class="nav-text">需要下载的软件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C"><span class="nav-number">6.</span> <span class="nav-text">准备工作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BC%80%E5%A7%8B%E8%A7%A3%E9%94%81"><span class="nav-number">7.</span> <span class="nav-text">开始解锁</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%AD%A5%E9%AA%A41-%E6%8B%86%E6%9C%BA"><span class="nav-number">7.1.</span> <span class="nav-text">步骤1 拆机</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%AD%A5%E9%AA%A42-%E7%94%B5%E6%BA%90%E6%96%AD%E7%94%B5"><span class="nav-number">7.2.</span> <span class="nav-text">步骤2 电源断电</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%AD%A5%E9%AA%A43-%E7%BB%84%E8%A3%85%E7%83%A7%E5%BD%95%E5%99%A8"><span class="nav-number">7.3.</span> <span class="nav-text">步骤3 组装烧录器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%AD%A5%E9%AA%A44-%E5%A4%B9%E4%BD%8FBIOS%E8%8A%AF%E7%89%87"><span class="nav-number">7.4.</span> <span class="nav-text">步骤4 夹住BIOS芯片</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%AD%A5%E9%AA%A45-%E8%BF%9E%E6%8E%A5%E8%87%B3%E5%8F%A6%E4%B8%80%E5%8F%B0%E7%94%B5%E8%84%91"><span class="nav-number">7.5.</span> <span class="nav-text">步骤5 连接至另一台电脑</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%AD%A5%E9%AA%A46-%E5%A4%87%E4%BB%BD%E6%9C%AC%E6%9C%BABISO%E6%96%87%E4%BB%B6"><span class="nav-number">7.6.</span> <span class="nav-text">步骤6 备份本机BISO文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%AD%A5%E9%AA%A47-%E5%BC%80%E5%A7%8B%E7%83%A7%E5%BD%95"><span class="nav-number">7.7.</span> <span class="nav-text">步骤7 开始烧录</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%AD%A5%E9%AA%A48-%E5%BC%80%E6%9C%BA%E6%B5%8B%E8%AF%95"><span class="nav-number">7.8.</span> <span class="nav-text">步骤8 开机测试</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#0300%E5%8D%87%E7%BA%A70A07%EF%BC%88%E9%9D%9E%E5%BF%85%E8%A6%81%EF%BC%8C%E6%B3%A8%E6%84%8F%E7%9C%8B%E4%B8%8A%E6%96%B9%E6%8F%90%E7%A4%BA%EF%BC%89"><span class="nav-number">8.</span> <span class="nav-text">0300升级0A07（非必要，注意看上方提示）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E9%93%BE%E6%8E%A5"><span class="nav-number">9.</span> <span class="nav-text">参考链接</span></a></li></ol>
+    </div>
+</div>
+        </div>
+    </div>
+
+
+                
+            </div>
+
+            
+
+        </main>
+
+        <div class="sidebar-tools">
+            <div class="tools-container">
+    <ul class="tools-list">
+        
+            <li class="search popup-trigger">
+                <i class="fa fa-search"></i>
+            </li>
+            
+<script src="/js/local-search.js"></script>
+
+        
+        <li class="mode-toggle">
+            <i class="fa fa-moon-o"></i>
+        </li>
+        
+    </ul>
+</div>
+
+        </div>
+
+        
+            <div class="scroll-to-top">
+                <ul>
+                    <li>
+                        <!--<i class="fa fa-caret-up"></i>-->
+                        <span class="scroll-percent"></span>
+                    </li>
+                </ul>
+            </div>
+        
+    </div>
+
+    <div class="page-bottom">
+        <footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info info-item">
+            &copy; 2022 <a href="/">张宸</a>
+        </div>
+        <div class="theme-info info-item">
+            由 <a target="_blank" href="https://hexo.io">Hexo</a> 驱动 | 主题 <a
+                    href="https://github.com/XPoet/hexo-theme-ils" target="_blank">ILS v1.1.0</a>
+        </div>
+        
+    </div>
 </footer>
+    </div>
+</div>
+
+    <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-icon">
+            <i class="fa fa-search"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="搜索..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="popup-btn-close">
+                <i class="fa fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="/js/main.js"></script>
+<script src="/js/header-shrink.js"></script>
+<script src="/js/toggle-mode.js"></script>
+
+
+
+    
+<script src="/js/scroll-to-top.js"></script>
+
+
+
+
+
+    
+        
+<script src="/js/code-copy.js"></script>
 
     
 
-<script src="//cdn.staticfile.org/jquery/2.0.3/jquery.min.js"></script>
+    
+        
+<script src="/lib/anime.min.js"></script>
+<script src="/js/toc.js"></script>
 
-
-  
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-
-  
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
+    
 
 
 
 
-<script src="/js/script.js"></script>
-
-
-  </div>
 </body>
 </html>
