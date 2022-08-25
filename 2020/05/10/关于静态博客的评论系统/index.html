@@ -3,15 +3,15 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="keywords" content="zhangchen,NodeCat,Blog,Network,PHP,Java,JavaScript,记录生活,个人博客,张宸博客">
+    <meta name="keywords" content="Hexo Theme Keep">
     <meta name="description" content="Signal developer &amp; Student">
-    <meta name="author" content="Keep Team">
+    <meta name="author" content="张宸">
     
     <title>
         
             关于静态博客的评论系统 |
         
-        Keep Theme
+        张宸 BLOG
     </title>
     
 <link rel="stylesheet" href="/css/style.css">
@@ -22,8 +22,8 @@
 
     <script id="hexo-configurations">
     let KEEP = window.KEEP || {};
-    KEEP.hexo_config = {"hostname":"ss102.ren","root":"/","language":"zh-CN","path":"search.json"};
-    KEEP.theme_config = {"toc":{"enable":false,"number":false,"expand_all":false,"init_open":false},"style":{"primary_color":"#0066CC","avatar":"/images/avatar.svg","favicon":"/images/logo.svg","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":false,"scale":false},"first_screen":{"enable":false,"background_img":"/images/bg.svg","description":"Keep writing and Keep loving."},"scroll":{"progress_bar":{"enable":false},"percent":{"enable":false}}},"local_search":{"enable":false,"preload":false},"code_copy":{"enable":false,"style":"default"},"pjax":{"enable":false},"lazyload":{"enable":false},"version":"3.4.5"};
+    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"zh-CN","path":"search.xml"};
+    KEEP.theme_config = {"toc":{"enable":true,"number":true,"expand_all":false,"init_open":false},"style":{"primary_color":"#0066CC","avatar":"/images/avatar.svg","favicon":"/images/logo.svg","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":false,"scale":false},"first_screen":{"enable":false,"background_img":"/images/bg.svg","description":"Keep writing and Keep loving."},"scroll":{"progress_bar":{"enable":false},"percent":{"enable":false}}},"local_search":{"enable":true,"trigger":"auto","unescape":false,"preload":true},"code_copy":{"enable":true,"style":"default"},"pjax":{"enable":false},"lazyload":{"enable":false},"version":"3.4.5"};
     KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"};
   </script>
 <meta name="generator" content="Hexo 6.2.0"></head>
@@ -50,7 +50,7 @@
         <div class="left">
             
             <a class="logo-title" href="/">
-                Keep Theme
+                张宸 BLOG
             </a>
         </div>
 
@@ -74,10 +74,48 @@
                             </a>
                         </li>
                     
+                        <li class="menu-item">
+                            <a class=""
+                               href="/categories"
+                            >
+                                分类
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/tags"
+                            >
+                                标签
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/links"
+                            >
+                                友链
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/about"
+                            >
+                                关于
+                            </a>
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="fas fa-search"></i>
+                        </li>
                     
                 </ul>
             </div>
             <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
                 
                 <div class="icon-item menu-bar">
                     <div class="menu-bar-middle"></div>
@@ -97,6 +135,26 @@
                 <li class="drawer-menu-item flex-center">
                     <a class=""
                        href="/archives">归档</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/categories">分类</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/tags">标签</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/links">友链</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/about">关于</a>
                 </li>
             
         </ul>
@@ -128,7 +186,7 @@
                 </div>
                 <div class="info">
                     <div class="author">
-                        <span class="name">Keep Team</span>
+                        <span class="name">张宸</span>
                         
                             <span class="author-label">Lv1</span>
                         
@@ -156,7 +214,19 @@
 
     
     
+        <span class="article-wordcount article-meta-item">
+            <i class="fas fa-file-word"></i>&nbsp;<span>662 字</span>
+        </span>
     
+    
+        <span class="article-min2read article-meta-item">
+            <i class="fas fa-clock"></i>&nbsp;<span>2 分钟</span>
+        </span>
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fas fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
     
 </div>
 
@@ -191,22 +261,22 @@
 <h4 id="Valine"><a href="#Valine" class="headerlink" title="Valine"></a>Valine</h4><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://valine.js.org/</span><br></pre></td></tr></table></figure>
 
 <p>一款基于LeanCloud的快速、简洁且高效的无后端评论系统。</p>
-<p>可以安装拓展插件 进行评论回复邮件的通知 <a target="_blank" rel="noopener" href="https://github.com/zhaojun1998/Valine-Admin">Valine-Admin</a></p>
+<p>可以安装拓展插件 进行评论回复邮件的通知 <a class="link"   target="_blank" rel="noopener" href="https://github.com/zhaojun1998/Valine-Admin" >Valine-Admin<i class="fas fa-external-link-alt"></i></a></p>
 <h3 id="基于Github-issue"><a href="#基于Github-issue" class="headerlink" title="基于Github issue"></a>基于Github issue</h3><h4 id="Gitment"><a href="#Gitment" class="headerlink" title="Gitment"></a>Gitment</h4><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://github.com/imsun/gitment</span><br></pre></td></tr></table></figure>
 
-<p>中文介绍：<a target="_blank" rel="noopener" href="https://imsun.net/posts/gitment-introduction/">Gitment</a> 优点就不说了。</p>
+<p>中文介绍：<a class="link"   target="_blank" rel="noopener" href="https://imsun.net/posts/gitment-introduction/" >Gitment<i class="fas fa-external-link-alt"></i></a> 优点就不说了。</p>
 <p>缺点：只支持GitHub登录，长期未维护。</p>
 <h4 id="Gitalk"><a href="#Gitalk" class="headerlink" title="Gitalk"></a>Gitalk</h4><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://gitalk.github.io</span><br></pre></td></tr></table></figure>
 
 <p>一个基于 Github Issue 和 Preact 开发的评论插件。</p>
-<p>和Gitment类似 <a target="_blank" rel="noopener" href="https://github.com/gitalk/gitalk#install">安装使用</a> </p>
+<p>和Gitment类似 <a class="link"   target="_blank" rel="noopener" href="https://github.com/gitalk/gitalk#install" >安装使用<i class="fas fa-external-link-alt"></i></a> </p>
 <h4 id="utterances"><a href="#utterances" class="headerlink" title="utterances"></a>utterances</h4><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://github.com/utterance/utterances</span><br></pre></td></tr></table></figure>
 
 <p>官方介绍：</p>
 <blockquote>
 <p>一个基于GitHub issue的轻量级评论小部件。</p>
 </blockquote>
-<p><a target="_blank" rel="noopener" href="https://utteranc.es/">官网</a></p>
+<p><a class="link"   target="_blank" rel="noopener" href="https://utteranc.es/" >官网<i class="fas fa-external-link-alt"></i></a></p>
 <h4 id="Vssue"><a href="#Vssue" class="headerlink" title="Vssue"></a>Vssue</h4><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://vssue.js.org/</span><br></pre></td></tr></table></figure>
 
 <p>Vssue 是一个 Vue 组件 &#x2F; 插件，可以为你的静态页面开启评论功能。</p>
@@ -215,11 +285,11 @@
 <ul>
 <li><strong>Vssue</strong> 支持 Github, Gitlab, Bitbucket, Gitee 和 Gitea，并且很容易扩展到其它平台。<strong>Gitment</strong> 和 <strong>Gitalk</strong> 仅支持 Github。</li>
 <li><strong>Vssue</strong> 可以发表、编辑、删除评论。<strong>Gitment</strong> 和 <strong>Gitalk</strong> 仅能发表评论。</li>
-<li><strong>Vssue</strong> 是基于 <a target="_blank" rel="noopener" href="https://vuejs.org/">Vue.js</a> 开发的，可以集成到 Vue 项目中，并且提供了一个 <a target="_blank" rel="noopener" href="https://vssue.js.org/zh/guide/vuepress.html">VuePress 插件</a>。 <strong>Gitment</strong> 基于原生JS，而 <strong>Gitalk</strong> 基于 <a target="_blank" rel="noopener" href="https://github.com/developit/preact">Preact</a>。</li>
+<li><strong>Vssue</strong> 是基于 <a class="link"   target="_blank" rel="noopener" href="https://vuejs.org/" >Vue.js<i class="fas fa-external-link-alt"></i></a> 开发的，可以集成到 Vue 项目中，并且提供了一个 <a class="link"   target="_blank" rel="noopener" href="https://vssue.js.org/zh/guide/vuepress.html" >VuePress 插件<i class="fas fa-external-link-alt"></i></a>。 <strong>Gitment</strong> 基于原生JS，而 <strong>Gitalk</strong> 基于 <a class="link"   target="_blank" rel="noopener" href="https://github.com/developit/preact" >Preact<i class="fas fa-external-link-alt"></i></a>。</li>
 </ul>
 <h3 id="纯静态"><a href="#纯静态" class="headerlink" title="纯静态"></a>纯静态</h3><h4 id="Staticman"><a href="#Staticman" class="headerlink" title="Staticman"></a>Staticman</h4><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://staticman.net</span><br></pre></td></tr></table></figure>
 
-<p>顾名思义 纯静态评论系统 指用户进行评论生成内容等操作时，将输入内容与其余内容一起重新生成并上传到GitHub repo中。<a target="_blank" rel="noopener" href="http://popcorn.staticman.net/">演示页面</a></p>
+<p>顾名思义 纯静态评论系统 指用户进行评论生成内容等操作时，将输入内容与其余内容一起重新生成并上传到GitHub repo中。<a class="link"   target="_blank" rel="noopener" href="http://popcorn.staticman.net/" >演示页面<i class="fas fa-external-link-alt"></i></a></p>
 <h3 id="自建评论系统"><a href="#自建评论系统" class="headerlink" title="自建评论系统"></a>自建评论系统</h3><h4 id="ISSO"><a href="#ISSO" class="headerlink" title="ISSO"></a>ISSO</h4><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://posativ.org/isso</span><br></pre></td></tr></table></figure>
 
 <p>官方介绍：</p>
@@ -233,15 +303,32 @@
 <blockquote>
 <p>一个免费开源的PHP评论系统，允许完全匿名的评论和简单的主题化。旨在替代Disqus等专有服务。</p>
 </blockquote>
-<p>特色功能前往<a target="_blank" rel="noopener" href="https://www.barkdull.org/software/hashover">官网</a>查看</p>
+<p>特色功能前往<a class="link"   target="_blank" rel="noopener" href="https://www.barkdull.org/software/hashover" >官网<i class="fas fa-external-link-alt"></i></a>查看</p>
 <hr>
 <p>本博客目前使用的评论系统是Vssue，后期可能会考虑更换 。</p>
 <h3 id="参考网站"><a href="#参考网站" class="headerlink" title="参考网站"></a>参考网站</h3><ol>
-<li><a target="_blank" rel="noopener" href="https://blog.shuiba.co/comment-systems-recommendation">第三方评论系统推荐 - 水八口记</a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://blog.shuiba.co/comment-systems-recommendation" >第三方评论系统推荐 - 水八口记<i class="fas fa-external-link-alt"></i></a></li>
 </ol>
 
         </div>
 
+        
+            <div class="post-copyright-info">
+                <div class="article-copyright-info-container">
+    <ul>
+        <li>本文标题：关于静态博客的评论系统</li>
+        <li>本文作者：张宸</li>
+        <li>创建时间：2020-05-10 12:51:29</li>
+        <li>
+            本文链接：https://ss102.ren/2020/05/10/关于静态博客的评论系统/
+        </li>
+        <li>
+            版权声明：本博客所有文章除特别声明外，均采用 <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">BY-NC-SA</a> 许可协议。转载请注明出处！
+        </li>
+    </ul>
+</div>
+
+            </div>
         
 
         
@@ -295,8 +382,22 @@
               <span>2020</span>
               -
             
-            2022&nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;<a href="/">Keep Team</a>
+            2022&nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;<a href="/">张宸</a>
         </div>
+        
+            <script async  src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <div class="website-count info-item">
+                
+                    <span id="busuanzi_container_site_uv">
+                        访问人数&nbsp;<span id="busuanzi_value_site_uv"></span>&ensp;
+                    </span>
+                
+                
+                    <span id="busuanzi_container_site_pv">
+                        总访问量&nbsp;<span id="busuanzi_value_site_pv"></span>
+                    </span>
+                
+            </div>
         
         <div class="theme-info info-item">
             由 <a target="_blank" href="https://hexo.io">Hexo</a> 驱动&nbsp;|&nbsp;主题&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.4.5</a>
@@ -314,6 +415,10 @@
             <div class="post-tools-container">
     <ul class="tools-list">
         <!-- TOC aside toggle -->
+        
+            <li class="tools-item page-aside-toggle">
+                <i class="fas fa-outdent"></i>
+            </li>
         
 
         <!-- go comment -->
@@ -368,11 +473,48 @@
     </div>
 
     
+        <aside class="page-aside">
+            <div class="post-toc-wrap">
+    <div class="post-toc">
+        <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%BA%E4%BA%8E%E7%AC%AC%E4%B8%89%E6%96%B9"><span class="nav-number">2.</span> <span class="nav-text">基于第三方</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Disqus"><span class="nav-number">2.1.</span> <span class="nav-text">Disqus</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Livere%EF%BC%88%E6%9D%A5%E5%BF%85%E5%8A%9B%EF%BC%89"><span class="nav-number">2.2.</span> <span class="nav-text">Livere（来必力）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Valine"><span class="nav-number">2.3.</span> <span class="nav-text">Valine</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%BA%E4%BA%8EGithub-issue"><span class="nav-number">3.</span> <span class="nav-text">基于Github issue</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Gitment"><span class="nav-number">3.1.</span> <span class="nav-text">Gitment</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Gitalk"><span class="nav-number">3.2.</span> <span class="nav-text">Gitalk</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#utterances"><span class="nav-number">3.3.</span> <span class="nav-text">utterances</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Vssue"><span class="nav-number">3.4.</span> <span class="nav-text">Vssue</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#vssue%E4%B8%8E%E7%B1%BB%E4%BC%BC%E9%A1%B9%E7%9B%AE%E6%AF%94%E8%BE%83"><span class="nav-number">3.4.1.</span> <span class="nav-text">vssue与类似项目比较</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BA%AF%E9%9D%99%E6%80%81"><span class="nav-number">4.</span> <span class="nav-text">纯静态</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Staticman"><span class="nav-number">4.1.</span> <span class="nav-text">Staticman</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%87%AA%E5%BB%BA%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F"><span class="nav-number">5.</span> <span class="nav-text">自建评论系统</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#ISSO"><span class="nav-number">5.1.</span> <span class="nav-text">ISSO</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#HashOver"><span class="nav-number">5.2.</span> <span class="nav-text">HashOver</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E7%BD%91%E7%AB%99"><span class="nav-number">6.</span> <span class="nav-text">参考网站</span></a></li></ol>
+    </div>
+</div>
+        </aside>
+    
 
     <div class="image-viewer-container">
     <img src="">
 </div>
 
+
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="搜索..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="popup-btn-close">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
 
     
 
@@ -393,12 +535,28 @@
 
 
 
+    
+<script src="/js/local-search.js"></script>
+
+
+
+
+    
+<script src="/js/code-copy.js"></script>
 
 
 
 
 
 <div class="post-scripts">
+    
+        
+<script src="/js/left-side-toggle.js"></script>
+
+<script src="/js/libs/anime.min.js"></script>
+
+<script src="/js/toc.js"></script>
+
     
 </div>
 
